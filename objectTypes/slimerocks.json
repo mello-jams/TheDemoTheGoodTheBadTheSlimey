@@ -1,0 +1,49 @@
+{
+	"name": "SlimeRocks",
+	"plugin-id": "Sprite",
+	"sid": 542891974718051,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 240,
+						"height": 110,
+						"originX": 0.5166666666666667,
+						"originY": 0.3181818181818182,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7020510,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.9958333333333333,
+								0,
+								0.9958333333333333,
+								0.990909090909091,
+								0,
+								0.990909090909091
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 427672174851986,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

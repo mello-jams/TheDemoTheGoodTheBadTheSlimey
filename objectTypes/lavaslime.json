@@ -1,0 +1,93 @@
+{
+	"name": "LavaSlime",
+	"plugin-id": "Sprite",
+	"sid": 478754910172233,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "LavaSlime",
+			"type": "boolean",
+			"desc": "",
+			"sid": 979402052705433
+		},
+		{
+			"name": "HPSlikme",
+			"type": "number",
+			"desc": "",
+			"sid": 720278644650954
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 762386016924015
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 109388811285107
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 714591831970183
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 246,
+						"height": 161,
+						"originX": 0.4585987261146497,
+						"originY": 0.41802492809204217,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3676369,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.5,
+								0.855072463768116,
+								0.949375866851595,
+								0.5,
+								1,
+								0.15458937198067635,
+								0.943134535367545,
+								0.009661835748792313,
+								0.5,
+								0.15458937198067635,
+								0.050624133148404984,
+								0.5,
+								0,
+								0.855072463768116,
+								0.04438280166435504
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": -0.14492753623188404,
+								"y": 0.4500693481276006
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 356106141021229,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

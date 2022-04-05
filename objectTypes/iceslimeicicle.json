@@ -1,0 +1,61 @@
+{
+	"name": "ICeSlimeIcicle",
+	"plugin-id": "Sprite",
+	"sid": 735759123569564,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 260283279314389
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 176,
+						"height": 81,
+						"originX": 0.36363636363636365,
+						"originY": 0.4320987654320988,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1450730,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0.017045454545454586,
+								0.5185185185185185,
+								0.0028409090909090606,
+								0.024691358024691468,
+								0.4985795454545454,
+								0.0802469135802466,
+								0.9971590909090909,
+								0.4567901234567908,
+								1,
+								0.6234567901234569,
+								0.5056818181818181,
+								0.8364197530864198
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 214844726580354,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

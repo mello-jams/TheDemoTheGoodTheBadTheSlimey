@@ -1,0 +1,44 @@
+{
+	"name": "Fire_spawner5",
+	"plugin-id": "Sprite",
+	"sid": 201894725629123,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 176,
+						"height": 171,
+						"originX": 0.5340909090909091,
+						"originY": 0.5321637426900585,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 214658,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Spawn Point",
+								"x": 0.7613636363636364,
+								"y": 0.9883040935672515
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 493769764899268,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

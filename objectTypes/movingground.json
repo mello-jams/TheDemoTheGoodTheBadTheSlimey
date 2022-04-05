@@ -1,0 +1,48 @@
+{
+	"name": "MovingGround",
+	"plugin-id": "Sprite",
+	"sid": 260302757629755,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 476989660360658
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 751661906404946
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3244596,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 836397605525349,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

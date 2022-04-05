@@ -1,0 +1,20 @@
+{
+	"name": "Text_damage_3",
+	"plugin-id": "Text",
+	"sid": 139316421651781,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 218001683278780
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 808026527618119
+		}
+	],
+	"effectTypes": []
+}

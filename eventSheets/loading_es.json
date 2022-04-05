@@ -1,0 +1,142 @@
+{
+	"name": "Loading_ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 334205832831997,
+					"parameters": {
+						"variable": "WhatLevel",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 551158981522588,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 495465244333495,
+					"parameters": {
+						"layout": "Level_1"
+					}
+				}
+			],
+			"sid": 824333352988498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 635007751039791,
+					"parameters": {
+						"variable": "WhatLevel",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 396737684180227,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 399511676205316,
+					"parameters": {
+						"layout": "Level_2"
+					}
+				}
+			],
+			"sid": 334483683607784
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 193458066199480,
+					"parameters": {
+						"variable": "WhatLevel",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 390112949771055,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 182128747165954,
+					"parameters": {
+						"layout": "Level_3"
+					}
+				}
+			],
+			"sid": 743168891790892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 873553613368410,
+					"parameters": {
+						"variable": "WhatLevel",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 213445618669005,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 729289218617388,
+					"parameters": {
+						"layout": "Boss_Level"
+					}
+				}
+			],
+			"sid": 131829642202215
+		}
+	],
+	"sid": 269863722402610
+}

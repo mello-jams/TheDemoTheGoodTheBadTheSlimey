@@ -1,0 +1,20 @@
+{
+	"name": "txtforWall",
+	"plugin-id": "Text",
+	"sid": 574841635781117,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 155643678093878
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 908279238526028
+		}
+	],
+	"effectTypes": []
+}

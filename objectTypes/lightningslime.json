@@ -1,0 +1,87 @@
+{
+	"name": "LightningSlime",
+	"plugin-id": "Sprite",
+	"sid": 762146125206047,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "LightingSlime",
+			"type": "boolean",
+			"desc": "",
+			"sid": 107550131389437
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 952902054626633
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 742774771762523
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 255574834353360
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 247,
+						"height": 189,
+						"originX": 0.4585987261146497,
+						"originY": 0.43247753986009013,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5920486,
+						"collisionPoly": {
+							"points": [
+								0.9951923076923077,
+								0.5026455026455027,
+								0.8509615384615384,
+								0.8835978835978836,
+								0.5,
+								1,
+								0.15384615384615385,
+								0.8835978835978836,
+								0.009615384615384581,
+								0.5026455026455027,
+								0.15384615384615385,
+								0.1164021164021164,
+								0.5,
+								0,
+								0.8509615384615384,
+								0.1164021164021164
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": -0.08653846153846145,
+								"y": 0.4973544973544973
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 991739444931823,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"name": "FireBall",
+	"plugin-id": "Sprite",
+	"sid": 300864208386675,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 229933207597385
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 103,
+						"height": 99,
+						"originX": 0.6504854368932039,
+						"originY": 0.48484848484848486,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4532875,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 253734044456169,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

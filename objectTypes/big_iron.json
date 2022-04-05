@@ -1,0 +1,82 @@
+{
+	"name": "big_iron",
+	"plugin-id": "Sprite",
+	"sid": 545002835351389,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 164463348990063
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 762751342935518
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 728831975148472
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 850097545124334
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 169,
+						"height": 98,
+						"originX": 0.378698224852071,
+						"originY": 0.6938775510204082,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1790500,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "business_end",
+								"x": 0.9053254437869822,
+								"y": 0.7040816326530612
+							},
+							{
+								"name": "grip",
+								"x": 0.11242603550295859,
+								"y": 0.29591836734693877
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 421321528506565,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

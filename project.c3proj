@@ -1,0 +1,590 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 28503,
+	"name": "SlimeTypePrototype",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		}
+	],
+	"uniqueId": "lrtlz0jh5q9",
+	"objectTypes": {
+		"items": [
+			"Platform",
+			"Ground",
+			"Sky",
+			"Door",
+			"Blockade",
+			"Door2",
+			"Shop_Owner",
+			"BluePotion",
+			"RedPotion",
+			"YellowPotion",
+			"PinkPotion",
+			"Sprite",
+			"Player_healthbar",
+			"Slime_healthbar",
+			"big_iron",
+			"Player",
+			"Clouds",
+			"WantedSign",
+			"Mountains1",
+			"Mountains2",
+			"Cursor",
+			"Spawnerforbullets",
+			"Bullets",
+			"MovingGround",
+			"MovingGround2",
+			"Underground",
+			"FalseFloor",
+			"Levely",
+			"Sprite3",
+			"WantedSign2",
+			"FADE",
+			"JumpPotion",
+			"WallClimb",
+			"HealthPotion",
+			"Sprite8",
+			"Sprite9",
+			"RockFloors",
+			"InvisbleWall",
+			"Sprite2",
+			"Audio",
+			"triggerForCombo",
+			"Door3",
+			"Door4",
+			"Cave",
+			"Sky2",
+			"Sky3"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Text",
+					"Text2",
+					"Text3",
+					"Text4",
+					"Text5",
+					"Text6",
+					"txtSlimesCount",
+					"Text7",
+					"Text_damage_3",
+					"txtTittle",
+					"Text9",
+					"ClickToPLauu",
+					"PowerCounter",
+					"txtforWall",
+					"txtforJump"
+				],
+				"subfolders": [],
+				"name": "Text"
+			},
+			{
+				"items": [
+					"Slime",
+					"Slime2",
+					"Slime3",
+					"Slime4",
+					"AcidSlime",
+					"LightningSlime",
+					"LavaSlime",
+					"FireSlime",
+					"FireBall",
+					"EarthSlime",
+					"WaterSlime",
+					"SlimeRocks",
+					"PoisonSlime",
+					"PoisonPuddle",
+					"AcidPuddle",
+					"ICeSlimeIcicle",
+					"Magma",
+					"LighteningBolt",
+					"FrostSlime",
+					"WaterSlime2"
+				],
+				"subfolders": [],
+				"name": "Slimes"
+			},
+			{
+				"items": [
+					"Keyboard",
+					"Mouse"
+				],
+				"subfolders": [],
+				"name": "Other"
+			},
+			{
+				"items": [
+					"TiledBackground"
+				],
+				"subfolders": [],
+				"name": "BKG"
+			},
+			{
+				"items": [
+					"Building1",
+					"Building2",
+					"Building3",
+					"Dialoge_trigger1",
+					"Dialoge_trigger2",
+					"Dialoge_trigger3",
+					"Dialoge_trigger4",
+					"Dialoge_trigger5",
+					"Intro_text1",
+					"Intro_text2",
+					"Intro_text3",
+					"Intro_text4",
+					"Intro_text5"
+				],
+				"subfolders": [],
+				"name": "Intro_assets"
+			},
+			{
+				"items": [
+					"Earth_spawner1",
+					"Earth_spawner2",
+					"Fire_spawner1",
+					"Fire_spawner2",
+					"Fire_spawner3",
+					"Fire_spawner4",
+					"Fire_spawner5",
+					"Earth_spawner3",
+					"Fire_spawner6",
+					"Earth_spawner4"
+				],
+				"subfolders": [],
+				"name": "Spawners"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Intro",
+			"Level_1",
+			"Level_2",
+			"Level_3",
+			"Loading_Screen",
+			"Tittle_Screen",
+			"Boss_Level",
+			"EndingScreen"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Level1_ES",
+			"Master_ES",
+			"intro_ES",
+			"Loading_ES",
+			"Tittle_ES",
+			"Level2_ES",
+			"Boss_ES"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "gun_load.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 519133478989415
+				},
+				{
+					"name": "large_bubbling.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 260459707292800
+				},
+				{
+					"name": "match_strike.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 768771892640768
+				},
+				{
+					"name": "not_sure.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 519617338072869
+				},
+				{
+					"name": "pop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 366452855940669
+				},
+				{
+					"name": "quick_slime.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 843169435694947
+				},
+				{
+					"name": "quiet_slime.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 806332600958795
+				},
+				{
+					"name": "short_click_slime.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 331020388594055
+				},
+				{
+					"name": "shot_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 510499080216815
+				},
+				{
+					"name": "slime_splat.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 257633966198120
+				},
+				{
+					"name": "slime_step.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 147509798888563
+				},
+				{
+					"name": "slime_two_peaks.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 955081143225132
+				},
+				{
+					"name": "small_bubbling.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 930584571142002
+				},
+				{
+					"name": "weird_click.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 589442441530235
+				},
+				{
+					"name": "zap.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 423110652613300
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "songCOWBOY_SLIMEBOP.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 217092988717702
+				},
+				{
+					"name": "song_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 901453316594123
+				},
+				{
+					"name": "song_menu.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 327597384228032
+				},
+				{
+					"name": "cave_with_slight_music_ambient.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 790657729206532
+				},
+				{
+					"name": "cave_dark_ambient.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 284473648586504
+				},
+				{
+					"name": "cave_water_dripping.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 196029617801218
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "GloriaHallelujah-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 223204152819642
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 462722403731645,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 306094183820743,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 464614049800805,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 411467620075715,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 209883027140576,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 391210309749415,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 968928750606838,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": "Tittle_Screen"
+}

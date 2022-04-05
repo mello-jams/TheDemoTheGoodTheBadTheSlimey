@@ -1,0 +1,20 @@
+{
+	"name": "Dialoge_trigger5",
+	"plugin-id": "TiledBg",
+	"sid": 558418186703331,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4905837,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,576 @@
+{
+	"name": "intro_ES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "WhatLevel",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 387409035640376
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Intro_events",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 696469665776702,
+							"parameters": {
+								"object": "Dialoge_trigger1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text1",
+							"sid": 408798998055063,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 373214663816551
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 993833449546695,
+							"parameters": {
+								"object": "Dialoge_trigger1"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text1",
+							"sid": 498645080338449,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 988931376690007
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 112842350999904,
+							"parameters": {
+								"object": "Dialoge_trigger2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text2",
+							"sid": 981334660797688,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 374409235879973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 229228219435693,
+							"parameters": {
+								"object": "Dialoge_trigger2"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text2",
+							"sid": 511338072221389,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 302847836118427
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 774464396735111,
+							"parameters": {
+								"object": "Dialoge_trigger3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text3",
+							"sid": 314141963081941,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 499771178187991
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 903854397650597,
+							"parameters": {
+								"object": "Dialoge_trigger3"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text3",
+							"sid": 425692114095066,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 932972371193082
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 216197562044958,
+							"parameters": {
+								"object": "Dialoge_trigger4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text4",
+							"sid": 304442938299780,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 215392074167856
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 383233565238828,
+							"parameters": {
+								"object": "Dialoge_trigger4"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text4",
+							"sid": 651822019872729,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 990393360606906
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 104049576470360,
+							"parameters": {
+								"object": "Dialoge_trigger5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text5",
+							"sid": 533141918274307,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 945464440529354
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 919250156526611,
+							"parameters": {
+								"object": "Dialoge_trigger5"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Intro_text5",
+							"sid": 452607610012727,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 614380643145049
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 600453303701107,
+							"parameters": {
+								"object": "WantedSign2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "FADE",
+							"sid": 643475273516994,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FADE",
+							"sid": 586783852737710,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 220068992320629,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 175209913030284,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 395705472322546,
+							"parameters": {
+								"variable": "WhatLevel",
+								"value": "1"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 634081713761410,
+							"parameters": {
+								"layout": "Loading_Screen"
+							}
+						}
+					],
+					"sid": 137033829693213
+				}
+			],
+			"sid": 907244885660390
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movement2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-outside-layout",
+							"objectClass": "Player",
+							"sid": 578826001981713
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player",
+							"sid": 986419308459744
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 504770983690779
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 625989866094332
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 500908589586043,
+							"parameters": {
+								"variable": "Merchant",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 750947255520346
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 215077080233606,
+							"parameters": {
+								"key": 87
+							}
+						},
+						{
+							"id": "is-by-wall",
+							"objectClass": "Player",
+							"sid": 921159266087388,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "right"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 152826939060085,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 738645719678615
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 561253705794164,
+							"parameters": {
+								"key": 87
+							}
+						},
+						{
+							"id": "is-by-wall",
+							"objectClass": "Player",
+							"sid": 985291450528363,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "left"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 124934660247489,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 762661522316842
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 171088378584324,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 126641813622986,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Player",
+							"sid": 147218135129421,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 931025993295182
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 972428893006893,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 301826978292242,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 726078648268714
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 286823025855694,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 669607253857494,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Player",
+							"sid": 578085698465635,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 613484758836873
+				}
+			],
+			"sid": 287206510453470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 612696445955036
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 609660299277497,
+					"parameters": {
+						"audio-file": "songCOWBOY_SLIMEBOP",
+						"loop": "looping",
+						"volume": "-10",
+						"tag-optional": "\"broooooo this is fyyyyyrrrrreeee thanks Hugh\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 468655415288651,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 349757130408683
+		}
+	],
+	"sid": 202001885289933
+}

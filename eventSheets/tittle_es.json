@@ -1,0 +1,80 @@
+{
+	"name": "Tittle_ES",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 138389597866038,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ClickToPLauu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 791851260656143,
+					"parameters": {
+						"layout": "Intro"
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 201753386972153
+				}
+			],
+			"sid": 419237174830712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 903847325255762
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 772744118764490,
+					"parameters": {
+						"audio-file": "song_menu",
+						"loop": "looping",
+						"volume": "-15",
+						"tag-optional": "\"Hugh made these beats\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 540919949928863,
+					"disabled": true,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 172992626189133,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 936761424690117
+		}
+	],
+	"sid": 776700732484750
+}

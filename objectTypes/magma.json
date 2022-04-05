@@ -1,0 +1,43 @@
+{
+	"name": "Magma",
+	"plugin-id": "Sprite",
+	"sid": 299831310199266,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 542061351797763
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 219,
+						"height": 189,
+						"originX": 0.5251141552511416,
+						"originY": 0.36507936507936506,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7740761,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 510600910747980,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "txtSlimesCount",
+	"plugin-id": "Text",
+	"sid": 663270646751613,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "txtSlimes",
+			"type": "number",
+			"desc": "",
+			"sid": 270233055430414
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 803201086772841
+		}
+	],
+	"effectTypes": []
+}
