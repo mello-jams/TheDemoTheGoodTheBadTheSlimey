@@ -4734,6 +4734,45 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 451406007482534,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 876991162586347
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 278981905069133,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Y+5000"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 464001402229903,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X+50000"
+									}
+								}
+							],
+							"sid": 378798735254997
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "on-key-pressed",
 									"objectClass": "Keyboard",
 									"sid": 886121853213550,
@@ -4763,19 +4802,19 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 973878954024743,
+									"sid": 934500437301197,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y-1980"
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 192355771912970,
+									"sid": 113505851847450,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.Y-1500"
+										"vector-x": "Self.Platform.VectorX+Self.Platform.JumpStrength"
 									}
 								}
 							],
@@ -4814,19 +4853,19 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 576237743423645,
+									"sid": 568233323027059,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y-1980"
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 951019657315105,
+									"sid": 121722148040345,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.Y-1500"
+										"vector-x": "Self.Platform.VectorX-Self.Platform.JumpStrength"
 									}
 								}
 							],

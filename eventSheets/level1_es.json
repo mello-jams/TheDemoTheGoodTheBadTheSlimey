@@ -239,6 +239,214 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "tut",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 406832552186111,
+									"parameters": {
+										"object": "coincompletetut"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "coincompletetut",
+									"sid": 188092526569907
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Ground2walltut",
+									"sid": 419209719383966
+								}
+							],
+							"sid": 417054724654800
+						}
+					],
+					"sid": 503484667077124
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Tut Voicelines",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 689856813290991,
+									"parameters": {
+										"object": "Dialoge_trigger1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Intro_text1",
+									"sid": 829424869860377,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 382750417696630
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 496465418531010,
+									"parameters": {
+										"object": "Dialoge_trigger1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Intro_text1",
+									"sid": 841776231122464,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 349571302254388
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 449806516078335,
+									"parameters": {
+										"object": "Dialoge_trigger2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Intro_text2",
+									"sid": 317604399744416,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 579570179769262
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 494911459451434,
+									"parameters": {
+										"object": "Dialoge_trigger2"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Intro_text2",
+									"sid": 518106733717092,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 260943804599030
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 250162985877452,
+									"parameters": {
+										"object": "WantedSign2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "FADE",
+									"sid": 667871110711569,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "FADE",
+									"sid": 870819121299669,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Player",
+									"sid": 215244762371081,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 298198337539218,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 473861449675042,
+									"parameters": {
+										"variable": "WhatLevel",
+										"value": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 216951999196869,
+									"parameters": {
+										"layout": "Loading_Screen"
+									}
+								}
+							],
+							"sid": 876844363173435
+						}
+					],
+					"sid": 876197625327281
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "EnemyDeathHow",
 					"description": "",
 					"isActiveOnStart": true,
@@ -2104,6 +2312,27 @@
 										}
 									],
 									"sid": 447295160056577
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Bullets",
+											"sid": 576277520437037,
+											"parameters": {
+												"object": "Ground2walltut"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Bullets",
+											"sid": 823333266103999
+										}
+									],
+									"sid": 695227518807715
 								},
 								{
 									"eventType": "block",
@@ -5013,6 +5242,104 @@
 								}
 							],
 							"sid": 311114966751941
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 260578206295354,
+									"parameters": {
+										"key": 87
+									}
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 452764836383193,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								},
+								{
+									"id": "collisions-enabled",
+									"objectClass": "big_iron",
+									"sid": 593180103270244
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 432017410352343,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Y+10"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 586031777100693,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X+10"
+									}
+								}
+							],
+							"sid": 826516786315919,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 440787088157066,
+									"parameters": {
+										"key": 87
+									}
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 899894213492298,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								},
+								{
+									"id": "collisions-enabled",
+									"objectClass": "big_iron",
+									"sid": 578177188846182
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 112492082527919,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Y+10"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 576975345433800,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X+10"
+									}
+								}
+							],
+							"sid": 655471925544887,
+							"disabled": true
 						},
 						{
 							"eventType": "script",

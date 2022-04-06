@@ -201,7 +201,9 @@
 			"Sky2",
 			"Sky3",
 			"Video",
-			"Tutorial1"
+			"Tutorial1",
+			"coincompletetut",
+			"Ground2walltut"
 		],
 		"subfolders": [
 			{
