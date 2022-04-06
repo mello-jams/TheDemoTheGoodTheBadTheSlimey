@@ -136,6 +136,40 @@
 				}
 			],
 			"sid": 131829642202215
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 512091554692565,
+					"parameters": {
+						"variable": "WhatLevel",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 543727533573592,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 273873498111009,
+					"parameters": {
+						"layout": "EndingScreen"
+					}
+				}
+			],
+			"sid": 759867148162670
 		}
 	],
 	"sid": 269863722402610

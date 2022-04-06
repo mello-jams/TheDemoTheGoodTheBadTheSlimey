@@ -109,38 +109,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "mouse-button-is-down",
-					"objectClass": "Mouse",
-					"sid": 665526290101047,
-					"parameters": {
-						"mouse-button": "left"
-					},
-					"isInverted": true
-				},
-				{
-					"id": "is-suspended",
-					"objectClass": "System",
-					"sid": 487996877296849
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 122853883680291,
-					"parameters": {
-						"variable": "IsAnyoneHere",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 465535411278541,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 120326807457808,
@@ -150,6 +118,14 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Video",
+					"sid": 280795374240375,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
@@ -175,14 +151,6 @@
 					"parameters": {
 						"layer": "2",
 						"interactive": true
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Video",
-					"sid": 632068692467111,
-					"parameters": {
-						"visibility": "invisible"
 					}
 				},
 				{
