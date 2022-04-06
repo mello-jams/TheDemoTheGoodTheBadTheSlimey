@@ -55,6 +55,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Video",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
@@ -191,7 +199,8 @@
 			"Door4",
 			"Cave",
 			"Sky2",
-			"Sky3"
+			"Sky3",
+			"Video"
 		],
 		"subfolders": [
 			{
@@ -445,7 +454,13 @@
 			"subfolders": []
 		},
 		"video": {
-			"items": [],
+			"items": [
+				{
+					"name": "2022-04-05 20-27-50.mp4",
+					"type": "video/mp4",
+					"sid": 594665578555833
+				}
+			],
 			"subfolders": []
 		},
 		"font": {

@@ -160,6 +160,14 @@
 								"layer": "\"Shop\"",
 								"opacity": "0"
 							}
+						},
+						{
+							"id": "set-cursor-from-sprite",
+							"objectClass": "Mouse",
+							"sid": 400925591971318,
+							"parameters": {
+								"sprite": "Cursor"
+							}
 						}
 					],
 					"sid": 765244912627303

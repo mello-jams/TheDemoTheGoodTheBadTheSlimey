@@ -2,6 +2,16 @@
 	"name": "Tittle_ES",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "IsAnyoneHere",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 781252742091124
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -71,9 +81,141 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 227029994847468,
+					"parameters": {
+						"variable": "IsAnyoneHere",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 936761424690117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-movement",
+					"objectClass": "Mouse",
+					"sid": 926744474781151
+				}
+			],
+			"actions": [],
+			"sid": 471820109849586,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 227475280138462
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 356402724853505,
+					"parameters": {
+						"variable": "IsAnyoneHere",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 459062932351001
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 120326807457808,
+					"parameters": {
+						"variable": "IsAnyoneHere"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 353026012836550,
+					"parameters": {
+						"layer": "2",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "pause",
+					"objectClass": "Video",
+					"sid": 675427252420934
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Video",
+					"sid": 712657077794386,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 761357386109297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 639459095617035,
+					"parameters": {
+						"variable": "IsAnyoneHere"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 221889621588386,
+					"parameters": {
+						"layer": "2",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-playback-time",
+					"objectClass": "Video",
+					"sid": 783793172166883,
+					"parameters": {
+						"time": "0"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Video",
+					"sid": 781194054179901
+				},
+				{
+					"id": "set-source",
+					"objectClass": "Video",
+					"sid": 123385347397649,
+					"disabled": true,
+					"parameters": {
+						"webm-source": "\"\"",
+						"ogg-theora-source": "\"\"",
+						"h264-source": "\"2022-04-05 20-27-50\""
+					}
+				}
+			],
+			"sid": 548320913643860
 		}
 	],
 	"sid": 776700732484750
