@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "IsAnyoneHere",
 			"type": "boolean",
-			"initialValue": "false",
+			"initialValue": "true",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -22,6 +22,14 @@
 						"mouse-button": "left",
 						"click-type": "clicked",
 						"object-clicked": "ClickToPLauu"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 889267239613348,
+					"parameters": {
+						"variable": "IsAnyoneHere"
 					}
 				}
 			],
@@ -66,29 +74,10 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "Player",
-					"sid": 540919949928863,
-					"disabled": true,
-					"behaviorType": "ScrollTo",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "Player",
 					"sid": 172992626189133,
 					"behaviorType": "Platform",
 					"parameters": {
 						"state": "disabled"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 227029994847468,
-					"parameters": {
-						"variable": "IsAnyoneHere",
-						"value": "false"
 					}
 				}
 			],
@@ -98,22 +87,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-movement",
-					"objectClass": "Mouse",
-					"sid": 926744474781151
-				}
-			],
-			"actions": [],
-			"sid": 471820109849586,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-any-click",
 					"objectClass": "Mouse",
-					"sid": 227475280138462
+					"sid": 995616015777073
 				}
 			],
 			"actions": [
@@ -133,6 +109,38 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 665526290101047,
+					"parameters": {
+						"mouse-button": "left"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-suspended",
+					"objectClass": "System",
+					"sid": 487996877296849
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 122853883680291,
+					"parameters": {
+						"variable": "IsAnyoneHere",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 465535411278541,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
 					"sid": 120326807457808,
@@ -145,6 +153,15 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
+					"sid": 714216388489572,
+					"parameters": {
+						"layer": "3",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
 					"sid": 353026012836550,
 					"parameters": {
 						"layer": "2",
@@ -152,16 +169,42 @@
 					}
 				},
 				{
-					"id": "pause",
-					"objectClass": "Video",
-					"sid": 675427252420934
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 736088827540967,
+					"parameters": {
+						"layer": "2",
+						"interactive": true
+					}
 				},
 				{
 					"id": "set-visible",
 					"objectClass": "Video",
-					"sid": 712657077794386,
+					"sid": 632068692467111,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 757573127233536
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 365964372653834,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 541664648577210,
+					"parameters": {
+						"variable": "IsAnyoneHere",
+						"value": "false"
 					}
 				}
 			],
@@ -182,36 +225,60 @@
 			],
 			"actions": [
 				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 626199335723654,
+					"parameters": {
+						"layer": "2",
+						"interactive": false
+					}
+				},
+				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 221889621588386,
+					"sid": 649383116920834,
 					"parameters": {
 						"layer": "2",
 						"visibility": "invisible"
 					}
 				},
 				{
-					"id": "set-playback-time",
-					"objectClass": "Video",
-					"sid": 783793172166883,
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 285545014162513,
 					"parameters": {
-						"time": "0"
+						"layer": "3",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Video",
+					"sid": 741513971576063,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Video",
+					"sid": 755991780300924,
+					"parameters": {
+						"width": "1290",
+						"height": "550"
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Video",
-					"sid": 781194054179901
+					"sid": 475057395186795
 				},
 				{
-					"id": "set-source",
+					"id": "set-looping",
 					"objectClass": "Video",
-					"sid": 123385347397649,
-					"disabled": true,
+					"sid": 476661552369112,
 					"parameters": {
-						"webm-source": "\"\"",
-						"ogg-theora-source": "\"\"",
-						"h264-source": "\"2022-04-05 20-27-50\""
+						"mode": "looping"
 					}
 				}
 			],

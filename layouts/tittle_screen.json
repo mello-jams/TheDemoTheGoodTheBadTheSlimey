@@ -963,11 +963,45 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 333609287397378,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "Video",
 					"properties": {
-						"webm-source": "",
+						"webm-source": "beep.webm",
 						"ogg-theora-source": "",
 						"h264-source": "",
 						"autoplay": "yes",
@@ -978,10 +1012,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": 488,
-						"width": 933,
-						"height": 472,
+						"x": -151,
+						"y": 435,
+						"width": 1001,
+						"height": 534,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -993,7 +1027,7 @@
 					}
 				}
 			],
-			"sid": 333609287397378,
+			"sid": 808540061328814,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
