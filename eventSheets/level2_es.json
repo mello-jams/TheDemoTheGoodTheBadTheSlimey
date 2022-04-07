@@ -4740,30 +4740,16 @@
 									"parameters": {
 										"instance-variable": "WallScaling_Ability"
 									}
-								},
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 876991162586347
 								}
 							],
 							"actions": [
 								{
-									"id": "set-vector-y",
+									"id": "set-jump-strength",
 									"objectClass": "Player",
-									"sid": 666412504747790,
+									"sid": 737134953908472,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y+4000"
-									}
-								},
-								{
-									"id": "set-vector-x",
-									"objectClass": "Player",
-									"sid": 535099371622145,
-									"behaviorType": "Platform",
-									"parameters": {
-										"vector-x": "Self.X+4000"
+										"jump-strength": "1000"
 									}
 								}
 							],
@@ -5166,6 +5152,690 @@
 						}
 					],
 					"sid": 587523980772316
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "WallScalingAbility4",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "WallClimb",
+									"sid": 491451733336832
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "WallClimb",
+									"sid": 616280678279727,
+									"parameters": {
+										"width": "22.204582",
+										"height": "28.372522"
+									}
+								}
+							],
+							"sid": 501893713408930
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 212089436324388,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 849587606210129,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "500"
+									}
+								}
+							],
+							"sid": 961506521405947
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 231409534599815,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 203880523187060,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "600"
+									}
+								}
+							],
+							"sid": 320860459164911
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 785775244078439,
+									"parameters": {
+										"direction": "up"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 209587204344646,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 854914908920584,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 457047620411374,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 307525019287865,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.Platform.VectorX+Self.Platform.JumpStrength"
+									}
+								}
+							],
+							"sid": 935783625830592
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 583268777514600,
+									"parameters": {
+										"direction": "down"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 100336406889310,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 720257961500823,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 695104141678020,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 647553713751976,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.Platform.VectorX+Self.Platform.JumpStrength"
+									}
+								}
+							],
+							"sid": 101688984189517
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 344434867743708,
+									"parameters": {
+										"direction": "up"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 779065606484225,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 271463306546121,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 624939291420177,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 262361356067435,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.Platform.VectorX-Self.Platform.JumpStrength"
+									}
+								}
+							],
+							"sid": 720575045714360
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 243441034236385,
+									"parameters": {
+										"direction": "down"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 239073036204460,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 956812262681897,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 818265783522656,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 311686237554321,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.Platform.VectorX-Self.Platform.JumpStrength"
+									}
+								}
+							],
+							"sid": 622103115584794
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 293493647700210,
+									"parameters": {
+										"direction": "down"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 679594977562630,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 613167034640351,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 570383447999901,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Y+10"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 353781930648546,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X+10"
+									}
+								}
+							],
+							"sid": 915633496677724
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 941824605425469,
+									"parameters": {
+										"direction": "up"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 574811393509095,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 748578834243818,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 169590216088501,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Y+10"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 590713677253477,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X+10"
+									}
+								}
+							],
+							"sid": 848034463629154
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 354856180302086,
+									"parameters": {
+										"direction": "up"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 196940913397022,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 536858342361864,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 190795346806591,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Y+10"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 803475641531417,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X+10"
+									}
+								}
+							],
+							"sid": 405366049034500
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-mouse-wheel",
+									"objectClass": "Mouse",
+									"sid": 741503083311183,
+									"parameters": {
+										"direction": "down"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 291574689906050,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 110537088685792,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Player",
+									"sid": 499012174951636,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-y": "Self.Y+10"
+									}
+								},
+								{
+									"id": "set-vector-x",
+									"objectClass": "Player",
+									"sid": 645568875198124,
+									"behaviorType": "Platform",
+									"parameters": {
+										"vector-x": "Self.X+10"
+									}
+								}
+							],
+							"sid": 725538308350623
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 381731198323917,
+									"parameters": {
+										"object": "WallClimb"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 219882071826013,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "WallClimb",
+									"sid": 604893301340058
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 731508957003102,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 843994933606227,
+									"parameters": {
+										"variable": "Counter",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 616038454186564
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 791007988035319,
+									"parameters": {
+										"object": "WallClimb"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 941975158617713,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "WallClimb",
+									"sid": 124697820152855
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 471933968090543,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 174133112208173,
+									"parameters": {
+										"variable": "Counter",
+										"value": "false"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 939504823676072,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 239218116317471,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 776593345821789,
+									"parameters": {
+										"variable": "Counter",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 253792783890839
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 130720439098299,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "txtforJump",
+									"sid": 394516995923712,
+									"parameters": {
+										"text": "\"Wall Scaling \""
+									}
+								},
+								{
+									"id": "set-font-color",
+									"objectClass": "txtforJump",
+									"sid": 911735637013963,
+									"parameters": {
+										"color": "rgbEx(0, 0, 255)"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 928692078476880,
+									"parameters": {
+										"animation": "\"WallScaling\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 249854645707852
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 200825703841746,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 534223064954069,
+									"parameters": {
+										"animation": "\"Default\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 153128704054629,
+							"disabled": true
+						}
+					],
+					"sid": 828242650617593
 				},
 				{
 					"eventType": "group",

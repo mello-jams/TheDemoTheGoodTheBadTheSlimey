@@ -402,8 +402,8 @@
 						}
 					},
 					"world": {
-						"x": 52,
-						"y": 70,
+						"x": 1363,
+						"y": 3579,
 						"width": 54.600116222843,
 						"height": 30.27855478238334,
 						"originX": 0.5060975609756098,
@@ -2074,41 +2074,12 @@
 						}
 					},
 					"world": {
-						"x": 1044,
-						"y": 3642,
+						"x": 1214.4377881137802,
+						"y": 3631.7811059431097,
 						"width": 46.30499949794351,
 						"height": 30.493536254743283,
 						"originX": 0.4585987261146497,
 						"originY": 0.41813737675035206,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Earth_spawner2",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 289,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1013,
-						"y": 3604,
-						"width": 84.6253525392814,
-						"height": 82.22122320577908,
-						"originX": 0.5340909090909091,
-						"originY": 0.5321637426900585,
 						"color": [
 							1,
 							1,
@@ -2571,6 +2542,35 @@
 							1
 						],
 						"angle": 1.5706040150616452,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Earth_spawner2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1200.8819674546887,
+						"y": 3599.4467392300726,
+						"width": 84.6253525392814,
+						"height": 82.22122320577908,
+						"originX": 0.5340909090909091,
+						"originY": 0.5321637426900585,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
