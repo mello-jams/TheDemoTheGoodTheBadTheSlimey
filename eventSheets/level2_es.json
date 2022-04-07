@@ -4751,19 +4751,19 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 278981905069133,
+									"sid": 666412504747790,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y+5000"
+										"vector-y": "Self.Y+4000"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 464001402229903,
+									"sid": 535099371622145,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.X+50000"
+										"vector-x": "Self.X+4000"
 									}
 								}
 							],

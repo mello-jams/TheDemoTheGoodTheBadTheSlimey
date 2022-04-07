@@ -115,6 +115,11 @@
 					"parameters": {
 						"variable": "IsAnyoneHere"
 					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 106048627740897
 				}
 			],
 			"actions": [
@@ -189,9 +194,22 @@
 						"variable": "IsAnyoneHere"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 155853651480974
 				}
 			],
 			"actions": [
+				{
+					"id": "set-playback-time",
+					"objectClass": "Video",
+					"sid": 745620352810768,
+					"parameters": {
+						"time": "0"
+					}
+				},
 				{
 					"id": "set-layer-interactive",
 					"objectClass": "System",
