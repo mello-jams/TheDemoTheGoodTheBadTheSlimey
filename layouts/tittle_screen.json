@@ -1001,9 +1001,9 @@
 				{
 					"type": "Video",
 					"properties": {
-						"webm-source": "beep.webm",
+						"webm-source": "",
 						"ogg-theora-source": "",
-						"h264-source": "",
+						"h264-source": "beep2.mp4",
 						"autoplay": "yes",
 						"play-in-background": false,
 						"initially-visible": true
