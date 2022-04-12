@@ -279,7 +279,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
-							"sid": 600453303701107,
+							"sid": 492932859112777,
 							"parameters": {
 								"object": "WantedSign2"
 							}
@@ -287,9 +287,28 @@
 					],
 					"actions": [
 						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 746159753366609,
+							"disabled": true,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player",
+							"sid": 141673562751777,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "FADE",
-							"sid": 643475273516994,
+							"sid": 973621012722669,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -297,22 +316,13 @@
 						{
 							"id": "start-fade",
 							"objectClass": "FADE",
-							"sid": 586783852737710,
+							"sid": 995007616069512,
 							"behaviorType": "Fade"
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player",
-							"sid": 220068992320629,
-							"behaviorType": "Platform",
-							"parameters": {
-								"state": "disabled"
-							}
 						},
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 175209913030284,
+							"sid": 626337154448291,
 							"parameters": {
 								"seconds": "4"
 							}
@@ -320,7 +330,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 395705472322546,
+							"sid": 639764372075026,
 							"parameters": {
 								"variable": "WhatLevel",
 								"value": "1"
@@ -329,13 +339,13 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 634081713761410,
+							"sid": 931425386507305,
 							"parameters": {
 								"layout": "Loading_Screen"
 							}
 						}
 					],
-					"sid": 137033829693213
+					"sid": 234724900968612
 				}
 			],
 			"sid": 907244885660390

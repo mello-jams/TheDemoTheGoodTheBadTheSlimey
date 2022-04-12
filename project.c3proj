@@ -157,6 +157,14 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "lrtlz0jh5q9",
@@ -255,7 +263,8 @@
 					"Sprite9",
 					"triggerForCombo",
 					"WantedSign",
-					"WantedSign2"
+					"WantedSign2",
+					"Sky4loading"
 				],
 				"subfolders": [],
 				"name": "BKG"
@@ -314,7 +323,10 @@
 					"Player_healthbar",
 					"RedPotion",
 					"YellowPotion",
-					"WallClimb"
+					"WallClimb",
+					"Player2",
+					"big_iron2",
+					"big_iron3"
 				],
 				"subfolders": [],
 				"name": "Main asses'"

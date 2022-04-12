@@ -14,11 +14,11 @@
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.496,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5732739,
+						"imageSpriteId": 1000383,
 						"collisionPoly": {
 							"points": [
 								0.32400043087004493,
@@ -32,6 +32,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.512,
+								"y": -0.064
+							}
+						],
 						"duration": 1
 					}
 				],

@@ -1,80 +1,80 @@
 {
-	"name": "Player",
+	"name": "Player2",
 	"plugin-id": "Sprite",
-	"sid": 576671467933232,
+	"sid": 908595046190854,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "HP",
 			"type": "number",
 			"desc": "",
-			"sid": 680964666865928
+			"sid": 409108262664105
 		},
 		{
 			"name": "Speed_potions",
 			"type": "number",
 			"desc": "amount  of speed potions",
-			"sid": 596260438796704
+			"sid": 312124636427028
 		},
 		{
 			"name": "Power_potions",
 			"type": "number",
 			"desc": "amount of power  potions",
-			"sid": 927873583957443
+			"sid": 383069491435485
 		},
 		{
 			"name": "Jump_potions",
 			"type": "number",
 			"desc": "amount  of jump  potions",
-			"sid": 376703251644579
+			"sid": 777095471913925
 		},
 		{
 			"name": "Slime_potions",
 			"type": "number",
 			"desc": "amount of slime potions",
-			"sid": 410919271654737
+			"sid": 484779183147545
 		},
 		{
 			"name": "Speed_Ability",
 			"type": "boolean",
 			"desc": "",
-			"sid": 109039653666780
+			"sid": 599688658631217
 		},
 		{
 			"name": "WallScaling_Ability",
 			"type": "boolean",
 			"desc": "",
-			"sid": 380381534918085
+			"sid": 661034564398246
 		},
 		{
 			"name": "Jump_Ability",
 			"type": "boolean",
 			"desc": "",
-			"sid": 787799336922557
+			"sid": 310830166248498
 		},
 		{
 			"name": "Strapped_Ability",
 			"type": "boolean",
 			"desc": "if the player got the big iron holstered",
-			"sid": 628514995975982
+			"sid": 241982861907954
 		},
 		{
 			"name": "PoisonNum",
 			"type": "number",
 			"desc": "",
-			"sid": 890432002455292
+			"sid": 506811478940078
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
 			"name": "Platform",
-			"sid": 745854921298675
+			"sid": 587865892734904
 		},
 		{
 			"behaviorId": "scrollto",
 			"name": "ScrollTo",
-			"sid": 101481047241297
+			"sid": 558363932438422
 		}
 	],
 	"effectTypes": [],
@@ -85,12 +85,12 @@
 					{
 						"width": 328,
 						"height": 188,
-						"originX": 0.5060975609756098,
-						"originY": 0.5691489361702128,
+						"originX": 0.375,
+						"originY": 0.5851063829787234,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 236076,
+						"imageSpriteId": 5561953,
 						"collisionPoly": {
 							"points": [
 								0.15151515151515152,
@@ -142,7 +142,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 751527089829592,
+				"sid": 113262167970480,
 				"name": "Default",
 				"isLooping": true,
 				"isPingPong": false,
@@ -160,7 +160,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7544980,
+						"imageSpriteId": 361785,
 						"collisionPoly": {
 							"points": [
 								0.15151515151515152,
@@ -212,7 +212,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 597527059288515,
+				"sid": 271084382367857,
 				"name": "health",
 				"isLooping": true,
 				"isPingPong": false,
@@ -230,7 +230,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7154217,
+						"imageSpriteId": 3485764,
 						"collisionPoly": {
 							"points": [
 								0.15151515151515152,
@@ -282,7 +282,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 135778195583807,
+				"sid": 218048579502571,
 				"name": "WallScaling",
 				"isLooping": true,
 				"isPingPong": false,
@@ -300,7 +300,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3437835,
+						"imageSpriteId": 1890237,
 						"collisionPoly": {
 							"points": [
 								0.15151515151515152,
@@ -352,7 +352,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 124533480194506,
+				"sid": 177296662845252,
 				"name": "Jump",
 				"isLooping": true,
 				"isPingPong": false,
@@ -370,7 +370,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8148965,
+						"imageSpriteId": 8698396,
 						"collisionPoly": {
 							"points": [
 								0.15151515151515152,
@@ -422,7 +422,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 461218834624287,
+				"sid": 767761311069332,
 				"name": "Slime",
 				"isLooping": true,
 				"isPingPong": false,
