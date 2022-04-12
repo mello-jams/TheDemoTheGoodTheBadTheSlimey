@@ -402,8 +402,8 @@
 						}
 					},
 					"world": {
-						"x": 1363,
-						"y": 3579,
+						"x": 42,
+						"y": 78,
 						"width": 54.600116222843,
 						"height": 30.27855478238334,
 						"originX": 0.5060975609756098,
@@ -2677,6 +2677,100 @@
 				0.3686274509803922,
 				0.3686274509803922,
 				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Pm",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "TittleScreen",
+					"properties": {
+						"type": "button",
+						"text": "Tittle Screen",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 303,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 255.53425801668567,
+						"y": 278.111125620183,
+						"width": 265,
+						"height": 105,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "REstart",
+					"properties": {
+						"type": "button",
+						"text": "Restart",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 304,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 246.2560296782455,
+						"y": 93.49336432618273,
+						"width": 272,
+						"height": 106,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
+			"sid": 608759047346109,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"isInitiallyInteractive": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": true,

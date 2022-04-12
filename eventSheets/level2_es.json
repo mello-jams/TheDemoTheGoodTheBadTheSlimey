@@ -6243,6 +6243,271 @@
 			"sid": 972938656188387
 		},
 		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PauseMEnu3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 132188173108288,
+							"parameters": {
+								"key": 27
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 962876529145289,
+							"parameters": {
+								"variable": "PauseMEnu"
+							}
+						}
+					],
+					"sid": 479197968475525
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 884361835056829,
+							"parameters": {
+								"variable": "PauseMEnu"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 507820341832452,
+							"parameters": {
+								"group-name": "\"Player_behaviors2\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 426406786343062,
+							"parameters": {
+								"group-name": "\"Slimes Combos2\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 813768727812781,
+							"parameters": {
+								"group-name": "\"Healthbar_behaviors2\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 598169925227184,
+							"parameters": {
+								"group-name": "\"Potion_behaviors2\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 493465509992012,
+							"parameters": {
+								"group-name": "\"Level_behaviors2\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 547100597493358,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 516156498834240,
+							"parameters": {
+								"layer": "3",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 723157305432976,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 483118247108702
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 229646570396261,
+							"parameters": {
+								"variable": "PauseMEnu"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 873077244304296,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 253755447536435,
+							"parameters": {
+								"layer": "3",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 832441772735923,
+							"parameters": {
+								"group-name": "\"Player_behaviors2\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 713799400927785,
+							"parameters": {
+								"group-name": "\"Slimes Combos2\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 729620821162400,
+							"parameters": {
+								"group-name": "\"Healthbar_behaviors2\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 754328889017537,
+							"parameters": {
+								"group-name": "\"Potion_behaviors2\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 429912290580898,
+							"parameters": {
+								"group-name": "\"Level_behaviors2\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 901497275672294,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 579743947340649
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "REstart",
+							"sid": 146340848007809
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 559267799137673
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 235924914637585
+						}
+					],
+					"sid": 443810428048976
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "TittleScreen",
+							"sid": 886261602891946
+						}
+					],
+					"actions": [
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 600299088322093
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 757627502100294
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 405082960054597,
+							"parameters": {
+								"layout": "Tittle_Screen"
+							}
+						}
+					],
+					"sid": 292716932640509
+				}
+			],
+			"sid": 136173970952224
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

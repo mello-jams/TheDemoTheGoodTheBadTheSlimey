@@ -6365,6 +6365,294 @@
 			"sid": 363036432453264
 		},
 		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PauseMEnu2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 398806476265672,
+							"parameters": {
+								"key": 27
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 542221648405588,
+							"parameters": {
+								"variable": "PauseMEnu"
+							}
+						}
+					],
+					"sid": 725375553212306
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 300778183238918,
+							"parameters": {
+								"variable": "PauseMEnu"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 583403918728540,
+							"parameters": {
+								"group-name": "\"Player_behaviors\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 780280153301596,
+							"parameters": {
+								"group-name": "\"Slime_behaviors\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 830791755048718,
+							"parameters": {
+								"group-name": "\"Slimes Combos\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 356030402427651,
+							"parameters": {
+								"group-name": "\"Healthbar_behaviors\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 577014525197960,
+							"parameters": {
+								"group-name": "\"Potion_behaviors\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 575184539327316,
+							"parameters": {
+								"group-name": "\"Level_behaviors\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 118636435820886,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 804215933400037,
+							"parameters": {
+								"layer": "3",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 623745716267814,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 946580666216950
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 912550499462610,
+							"parameters": {
+								"variable": "PauseMEnu"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 539820705572084
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 624344227169819,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 178752040884366,
+							"parameters": {
+								"layer": "3",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 746972557221196,
+							"parameters": {
+								"group-name": "\"Player_behaviors\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 101988899589656,
+							"parameters": {
+								"group-name": "\"Slime_behaviors\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 946019230169969,
+							"parameters": {
+								"group-name": "\"Slimes Combos\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 191827367838739,
+							"parameters": {
+								"group-name": "\"Healthbar_behaviors\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 777390265889216,
+							"parameters": {
+								"group-name": "\"Potion_behaviors\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 127876211859915,
+							"parameters": {
+								"group-name": "\"Level_behaviors\"",
+								"state": "activated"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 251648023909170,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 702060177077531
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "REstart",
+							"sid": 988113109100816
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 698526376734441
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 111035637616428
+						}
+					],
+					"sid": 690043135132235
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "TittleScreen",
+							"sid": 663397857697308
+						}
+					],
+					"actions": [
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 537210004330468
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 250216559406770
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 472435713812877,
+							"parameters": {
+								"layout": "Tittle_Screen"
+							}
+						}
+					],
+					"sid": 166087134030868
+				}
+			],
+			"sid": 448336805653557
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
