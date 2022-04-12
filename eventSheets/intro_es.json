@@ -12,6 +12,16 @@
 			"sid": 387409035640376
 		},
 		{
+			"eventType": "variable",
+			"name": "PauseMEnu",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 215586959111482
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Intro_events",
@@ -570,6 +580,135 @@
 				}
 			],
 			"sid": 349757130408683
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 486974303307892,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 947121509826164,
+					"parameters": {
+						"variable": "PauseMEnu"
+					}
+				}
+			],
+			"sid": 449398891430696
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 346154448173506,
+					"parameters": {
+						"variable": "PauseMEnu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 160603614869806,
+					"parameters": {
+						"group-name": "\"Intro_events\"",
+						"state": "deactivated"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 963228930226266,
+					"parameters": {
+						"group-name": "\"Movement2\"",
+						"state": "deactivated"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 106907469766249,
+					"parameters": {
+						"layer": "3",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 415166561797223,
+					"parameters": {
+						"layer": "3",
+						"interactive": true
+					}
+				}
+			],
+			"sid": 187020432036592
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 344219748150673,
+					"parameters": {
+						"variable": "PauseMEnu"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 197476700124482,
+					"parameters": {
+						"layer": "3",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 889451808383644,
+					"parameters": {
+						"layer": "3",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 682845261431623,
+					"parameters": {
+						"group-name": "\"Movement2\"",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 288715088207030,
+					"parameters": {
+						"group-name": "\"Intro_events\"",
+						"state": "activated"
+					}
+				}
+			],
+			"sid": 425996765807024
 		}
 	],
 	"sid": 202001885289933

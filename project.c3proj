@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
@@ -154,56 +162,15 @@
 	"uniqueId": "lrtlz0jh5q9",
 	"objectTypes": {
 		"items": [
-			"Platform",
-			"Ground",
-			"Sky",
-			"Door",
-			"Blockade",
-			"Door2",
-			"Shop_Owner",
-			"BluePotion",
-			"RedPotion",
-			"YellowPotion",
-			"PinkPotion",
 			"Sprite",
-			"Player_healthbar",
 			"Slime_healthbar",
-			"big_iron",
-			"Player",
-			"Clouds",
-			"WantedSign",
-			"Mountains1",
-			"Mountains2",
-			"Cursor",
 			"Spawnerforbullets",
-			"Bullets",
-			"MovingGround",
-			"MovingGround2",
 			"Underground",
-			"FalseFloor",
-			"Levely",
-			"Sprite3",
-			"WantedSign2",
-			"FADE",
-			"JumpPotion",
-			"WallClimb",
-			"HealthPotion",
-			"Sprite8",
-			"Sprite9",
-			"RockFloors",
-			"InvisbleWall",
-			"Sprite2",
 			"Audio",
-			"triggerForCombo",
-			"Door3",
-			"Door4",
-			"Cave",
-			"Sky2",
-			"Sky3",
 			"Video",
 			"Tutorial1",
-			"coincompletetut",
-			"Ground2walltut"
+			"TittleScreen",
+			"REstart"
 		],
 		"subfolders": [
 			{
@@ -263,7 +230,32 @@
 			},
 			{
 				"items": [
-					"TiledBackground"
+					"TiledBackground",
+					"Cave",
+					"Clouds",
+					"Cursor",
+					"FADE",
+					"FalseFloor",
+					"Ground",
+					"Ground2walltut",
+					"Levely",
+					"Mountains1",
+					"Mountains2",
+					"MovingGround",
+					"MovingGround2",
+					"Platform",
+					"RockFloors",
+					"Shop_Owner",
+					"Sky",
+					"Sky2",
+					"Sky3",
+					"Sprite2",
+					"Sprite3",
+					"Sprite8",
+					"Sprite9",
+					"triggerForCombo",
+					"WantedSign",
+					"WantedSign2"
 				],
 				"subfolders": [],
 				"name": "BKG"
@@ -298,10 +290,34 @@
 					"Fire_spawner5",
 					"Earth_spawner3",
 					"Fire_spawner6",
-					"Earth_spawner4"
+					"Earth_spawner4",
+					"PinkPotion"
 				],
 				"subfolders": [],
 				"name": "Spawners"
+			},
+			{
+				"items": [
+					"big_iron",
+					"Blockade",
+					"BluePotion",
+					"Bullets",
+					"coincompletetut",
+					"Door",
+					"Door2",
+					"Door3",
+					"Door4",
+					"HealthPotion",
+					"InvisbleWall",
+					"JumpPotion",
+					"Player",
+					"Player_healthbar",
+					"RedPotion",
+					"YellowPotion",
+					"WallClimb"
+				],
+				"subfolders": [],
+				"name": "Main asses'"
 			}
 		]
 	},
