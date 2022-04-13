@@ -1773,7 +1773,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1814,12 +1814,12 @@
 						}
 					},
 					"world": {
-						"x": 77,
-						"y": 1741,
-						"width": 62.274250353422595,
-						"height": 34.53425434411612,
-						"originX": 0.5060975609756098,
-						"originY": 0.5691489361702128,
+						"x": 55,
+						"y": 1761,
+						"width": 80.6907207323311,
+						"height": 45.73951772172827,
+						"originX": 0.38588235294117645,
+						"originY": 0.7188755020080321,
 						"color": [
 							1,
 							1,

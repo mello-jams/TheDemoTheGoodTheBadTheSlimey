@@ -2694,6 +2694,15 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 533814828618447,
+									"parameters": {
+										"animation": "\"walking\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-mirrored",
 									"objectClass": "Player",
 									"sid": 156321823035583,
@@ -2724,6 +2733,15 @@
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "jump"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 467273302448315,
+									"parameters": {
+										"animation": "\"NormalJump\"",
+										"from": "beginning"
 									}
 								},
 								{
@@ -2760,6 +2778,15 @@
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "right"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 324912546039486,
+									"parameters": {
+										"animation": "\"walking\"",
+										"from": "beginning"
 									}
 								},
 								{

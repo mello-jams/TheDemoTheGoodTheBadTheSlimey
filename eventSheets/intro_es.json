@@ -363,36 +363,27 @@
 						{
 							"id": "is-outside-layout",
 							"objectClass": "Player",
-							"sid": 578826001981713
+							"sid": 246645890491234
 						}
 					],
 					"actions": [
 						{
 							"id": "destroy",
 							"objectClass": "Player",
-							"sid": 986419308459744
+							"sid": 791993052536140
 						},
 						{
 							"id": "restart-layout",
 							"objectClass": "System",
-							"sid": 504770983690779
+							"sid": 381638467867742
 						},
 						{
 							"id": "reset-global-variables",
 							"objectClass": "System",
-							"sid": 625989866094332
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 500908589586043,
-							"parameters": {
-								"variable": "Merchant",
-								"value": "false"
-							}
+							"sid": 135592939188166
 						}
 					],
-					"sid": 750947255520346
+					"sid": 112050170846844
 				},
 				{
 					"eventType": "block",
@@ -400,7 +391,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 215077080233606,
+							"sid": 354417879736402,
 							"parameters": {
 								"key": 87
 							}
@@ -408,7 +399,7 @@
 						{
 							"id": "is-by-wall",
 							"objectClass": "Player",
-							"sid": 921159266087388,
+							"sid": 291041442512162,
 							"behaviorType": "Platform",
 							"parameters": {
 								"side": "right"
@@ -420,14 +411,23 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "Player",
-							"sid": 152826939060085,
+							"sid": 275653626083780,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 742143502181805,
+							"parameters": {
+								"animation": "\"NormalJump\"",
+								"from": "beginning"
+							}
 						}
 					],
-					"sid": 738645719678615
+					"sid": 875214662717532
 				},
 				{
 					"eventType": "block",
@@ -435,7 +435,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 561253705794164,
+							"sid": 867942292166213,
 							"parameters": {
 								"key": 87
 							}
@@ -443,7 +443,7 @@
 						{
 							"id": "is-by-wall",
 							"objectClass": "Player",
-							"sid": 985291450528363,
+							"sid": 997724546238715,
 							"behaviorType": "Platform",
 							"parameters": {
 								"side": "left"
@@ -455,14 +455,23 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "Player",
-							"sid": 124934660247489,
+							"sid": 854394946159667,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 660749634280096,
+							"parameters": {
+								"animation": "\"NormalJump\"",
+								"from": "beginning"
+							}
 						}
 					],
-					"sid": 762661522316842
+					"sid": 461719584898071
 				},
 				{
 					"eventType": "block",
@@ -470,7 +479,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 171088378584324,
+							"sid": 114805781760310,
 							"parameters": {
 								"key": 65
 							}
@@ -480,22 +489,31 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "Player",
-							"sid": 126641813622986,
+							"sid": 279791309540447,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "left"
 							}
 						},
 						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 390748473569766,
+							"parameters": {
+								"animation": "\"walking\"",
+								"from": "beginning"
+							}
+						},
+						{
 							"id": "set-mirrored",
 							"objectClass": "Player",
-							"sid": 147218135129421,
+							"sid": 728640773620181,
 							"parameters": {
 								"state": "mirrored"
 							}
 						}
 					],
-					"sid": 931025993295182
+					"sid": 681146530845388
 				},
 				{
 					"eventType": "block",
@@ -503,7 +521,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 972428893006893,
+							"sid": 568443725708513,
 							"parameters": {
 								"key": 87
 							}
@@ -513,14 +531,34 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "Player",
-							"sid": 301826978292242,
+							"sid": 888137089490731,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 236687883888871,
+							"parameters": {
+								"animation": "\"NormalJump\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 929145671012757,
+							"parameters": {
+								"audio-file": "quiet_slime",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
-					"sid": 726078648268714
+					"sid": 147556569182776
 				},
 				{
 					"eventType": "block",
@@ -528,7 +566,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 286823025855694,
+							"sid": 797529717890502,
 							"parameters": {
 								"key": 68
 							}
@@ -538,25 +576,59 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "Player",
-							"sid": 669607253857494,
+							"sid": 669630667876143,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "right"
 							}
 						},
 						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 699422245555023,
+							"parameters": {
+								"animation": "\"walking\"",
+								"from": "beginning"
+							}
+						},
+						{
 							"id": "set-mirrored",
 							"objectClass": "Player",
-							"sid": 578085698465635,
+							"sid": 479545690957158,
 							"parameters": {
 								"state": "not-mirrored"
 							}
 						}
 					],
-					"sid": 613484758836873
+					"sid": 545354014284293
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "Player",
+							"sid": 554961774549551,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 696245924743564,
+							"parameters": {
+								"audio-file": "quick_slime",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 516415973817226
 				}
 			],
-			"sid": 287206510453470
+			"sid": 738287547353478
 		},
 		{
 			"eventType": "block",
