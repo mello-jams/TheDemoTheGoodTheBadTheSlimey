@@ -2997,68 +2997,14 @@
 					}
 				},
 				{
-					"type": "txtSlimesCount",
-					"properties": {
-						"text": "Text",
-						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": true,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 13,
-					"instanceVariables": {
-						"txtSlimes": 0
-					},
-					"behaviors": {
-						"Anchor": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "none",
-								"bottom-edge": "none",
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 7,
-						"y": 3,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "txtfroBullet",
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 12,
+						"font": "GloriaHallelujah-Regular",
+						"size": 18,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -3066,11 +3012,11 @@
 							0,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "top-right"
 					},
 					"uid": 61,
 					"instanceVariables": {
@@ -3088,11 +3034,11 @@
 						}
 					},
 					"world": {
-						"x": 807.2745973203185,
-						"y": 455.29153704609803,
-						"width": 43.26502390813806,
-						"height": 22.709997852516196,
-						"originX": 0,
+						"x": 846.6000217628477,
+						"y": 3,
+						"width": 122.4650179953573,
+						"height": 47.009997723770184,
+						"originX": 1,
 						"originY": 0,
 						"color": [
 							1,
@@ -3312,7 +3258,7 @@
 						"text": "Text",
 						"enable-bbcode": true,
 						"font": "GloriaHallelujah-Regular",
-						"size": 80,
+						"size": 40,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,

@@ -50,6 +50,24 @@
 							"id": "reset-global-variables",
 							"objectClass": "System",
 							"sid": 878915328604776
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 469985083681115,
+							"parameters": {
+								"instance-variable": "HP",
+								"value": "25"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "clowd",
+							"sid": 515124806567186,
+							"parameters": {
+								"instance-variable": "movin",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 417357100455677
@@ -163,9 +181,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "txtfroBullet",
-							"sid": 193727450566529,
+							"sid": 579697667319260,
 							"parameters": {
-								"text": "\"  \" &  GunBullets"
+								"text": "\" Ammo: \" &  GunBullets"
 							}
 						},
 						{
@@ -6347,7 +6365,8 @@
 							}
 						}
 					],
-					"sid": 187653396964401
+					"sid": 187653396964401,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -6443,10 +6462,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "BossSlime",
-							"sid": 682460527890889,
+							"sid": 578816542171133,
 							"parameters": {
 								"instance-variable": "HPSlime",
-								"value": "27"
+								"value": "55"
 							}
 						},
 						{
@@ -6482,10 +6501,10 @@
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "BossSlime",
-							"sid": 926828747267338,
+							"sid": 850749635010369,
 							"parameters": {
 								"instance-variable": "HPSlime",
-								"value": "1"
+								"value": "3"
 							}
 						}
 					],
@@ -6531,6 +6550,438 @@
 						}
 					],
 					"sid": 373253177454141
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BossSlime",
+							"sid": 476939066661377,
+							"parameters": {
+								"instance-variable": "HPSlime",
+								"comparison": 4,
+								"value": "25"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "BossSlime",
+							"sid": 639269527470200,
+							"parameters": {
+								"instance-variable": "NormalAttack",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 377565753845497
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Bosssss",
+					"description": "thinking of having magma spit from the lava slime at an angle?",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-los-to-object",
+									"objectClass": "BossSlime",
+									"sid": 854832676782313,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "BossSlime",
+									"sid": 305348484671483,
+									"parameters": {
+										"instance-variable": "NormalAttack"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-object",
+									"objectClass": "LavaSlime",
+									"sid": 514257398294465,
+									"disabled": true,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0",
+										"mode": "direct"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "LavaSlime",
+									"sid": 925759846048987,
+									"disabled": true,
+									"parameters": {
+										"angle": "0"
+									}
+								}
+							],
+							"sid": 448107339701919,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 999360543923250,
+											"parameters": {
+												"interval-seconds": "2"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 342340289311168,
+											"parameters": {
+												"first-value": "distance(Player.X,Player.Y,BossSlime.X,BossSlime.Y)",
+												"comparison": 3,
+												"second-value": "700"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "BossSlime",
+											"sid": 142468681688823,
+											"parameters": {
+												"object": "Magma",
+												"layer": "1",
+												"image-point": "2",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 568047915924548,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "BossSlime",
+											"sid": 377275201532645,
+											"parameters": {
+												"object": "LighteningBolt",
+												"layer": "1",
+												"image-point": "3",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 157911795661842,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "BossSlime",
+											"sid": 449578343084803,
+											"parameters": {
+												"object": "ICeSlimeIcicle",
+												"layer": "1",
+												"image-point": "3",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 830615932770227
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "Magma",
+									"sid": 461350546139008
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "Magma",
+									"sid": 630879877103540,
+									"parameters": {
+										"width": "30.044147",
+										"height": "25.928511"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Magma",
+									"sid": 590207682873670,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "Magma",
+									"sid": 872607385384099,
+									"parameters": {
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "Magma",
+									"sid": 255342457758555,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"acceleration": "1000"
+									}
+								}
+							],
+							"sid": 586508376953531
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "LighteningBolt",
+									"sid": 385053442895883
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "LighteningBolt",
+									"sid": 940525553084081,
+									"parameters": {
+										"width": "30.044147",
+										"height": "25.928511"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "LighteningBolt",
+									"sid": 909456101390821,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "LighteningBolt",
+									"sid": 410075409061750,
+									"parameters": {
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "LighteningBolt",
+									"sid": 915444560725463,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"acceleration": "1000"
+									}
+								}
+							],
+							"sid": 989746403052883
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "ICeSlimeIcicle",
+									"sid": 812461192670046
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "ICeSlimeIcicle",
+									"sid": 929113854774090,
+									"parameters": {
+										"width": "32.144156 ",
+										"height": "14.793617"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "ICeSlimeIcicle",
+									"sid": 161173249861320,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "ICeSlimeIcicle",
+									"sid": 229011480335079,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "ICeSlimeIcicle",
+									"sid": 520180576444346,
+									"parameters": {
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								},
+								{
+									"id": "set-acceleration",
+									"objectClass": "ICeSlimeIcicle",
+									"sid": 545684957705449,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"acceleration": "1000"
+									}
+								}
+							],
+							"sid": 354319799235849
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 392723246043886,
+									"parameters": {
+										"object": "Magma"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 818258643284223,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "1"
+									}
+								},
+								{
+									"id": "shake",
+									"objectClass": "Player",
+									"sid": 594423284901184,
+									"behaviorType": "ScrollTo",
+									"parameters": {
+										"magnitude": "20",
+										"duration": "0.4",
+										"mode": "reducing-magnitude"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Magma",
+									"sid": 576646718628049
+								}
+							],
+							"sid": 651569357820865
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 866666596197037,
+									"parameters": {
+										"object": "LighteningBolt"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 610277188599031,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "1"
+									}
+								},
+								{
+									"id": "shake",
+									"objectClass": "Player",
+									"sid": 639260066471440,
+									"behaviorType": "ScrollTo",
+									"parameters": {
+										"magnitude": "20",
+										"duration": "0.4",
+										"mode": "reducing-magnitude"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "LighteningBolt",
+									"sid": 701254550934310
+								}
+							],
+							"sid": 459100008061826
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 110259215618719,
+									"parameters": {
+										"object": "SlimeRocks"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 195268022402399,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "1"
+									}
+								},
+								{
+									"id": "shake",
+									"objectClass": "Player",
+									"sid": 585287635116967,
+									"behaviorType": "ScrollTo",
+									"parameters": {
+										"magnitude": "20",
+										"duration": "0.4",
+										"mode": "reducing-magnitude"
+									}
+								}
+							],
+							"sid": 258792074998061
+						}
+					],
+					"sid": 800866908108968
 				},
 				{
 					"eventType": "group",
@@ -6890,10 +7341,10 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 256862770339408,
+									"sid": 912893537508296,
 									"parameters": {
 										"variable": "BirthingCounter",
-										"value": "15"
+										"value": "30"
 									}
 								}
 							],
@@ -6968,6 +7419,77 @@
 						}
 					],
 					"sid": 521825054186857
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "BossSlime",
+							"sid": 721960593673974,
+							"parameters": {
+								"instance-variable": "HPSlime",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "BossSlime",
+							"sid": 813321735761374
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FADE",
+							"sid": 657244327495417,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "FADE",
+							"sid": 484048084737690,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player",
+							"sid": 250942531059663,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 183682104598510,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 269684596881775,
+							"parameters": {
+								"variable": "WhatLevel",
+								"value": "5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 934541135954916,
+							"parameters": {
+								"layout": "Loading_Screen"
+							}
+						}
+					],
+					"sid": 235267061149753
 				}
 			],
 			"sid": 438731291513046
@@ -7301,6 +7823,38 @@
 		{
 			"eventType": "include",
 			"includeSheet": "Timer"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "clowd",
+					"sid": 666460980345473,
+					"parameters": {
+						"instance-variable": "movin"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 476509832040765,
+					"parameters": {
+						"interval-seconds": "0.01"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "clowd",
+					"sid": 546321964076358,
+					"parameters": {
+						"distance": "-2"
+					}
+				}
+			],
+			"sid": 982628179964517
 		}
 	],
 	"sid": 500827366516291

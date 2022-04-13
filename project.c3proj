@@ -222,7 +222,13 @@
 			"TrainPlaceholder",
 			"TrainPlaceholder2",
 			"TrainPlaceholder3",
-			"Gamepad"
+			"Gamepad",
+			"TiledBackground2",
+			"TiledBackground3",
+			"TiledBackground4",
+			"TiledBackground5",
+			"Sprite4",
+			"clowd"
 		],
 		"subfolders": [
 			{
@@ -348,7 +354,8 @@
 					"Earth_spawner3",
 					"Fire_spawner6",
 					"Earth_spawner4",
-					"PinkPotion"
+					"PinkPotion",
+					"Earth_spawner5"
 				],
 				"subfolders": [],
 				"name": "Spawners"
@@ -410,7 +417,8 @@
 			"Boss_ES",
 			"Master_ES",
 			"Timer",
-			"Highscore"
+			"Highscore",
+			"Loading"
 		],
 		"subfolders": []
 	},

@@ -91,6 +91,14 @@
 							}
 						},
 						{
+							"id": "set-font-color",
+							"objectClass": "txtforTimer",
+							"sid": 257153692034822,
+							"parameters": {
+								"color": "rgbEx(0, 0, 0)"
+							}
+						},
+						{
 							"id": "reset-global-variables",
 							"objectClass": "System",
 							"sid": 114490430781512
@@ -208,9 +216,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "txtfroBullet",
-							"sid": 810662726616369,
+							"sid": 362375223696371,
 							"parameters": {
-								"text": "\"  \" &  GunBullets"
+								"text": "\" Ammo: \" &  GunBullets"
 							}
 						},
 						{
@@ -5452,9 +5460,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "txtforJump",
-									"sid": 989452906564295,
+									"sid": 710555324566559,
 									"parameters": {
-										"text": "\"Jump Boost \""
+										"text": "\"Double Jump \""
 									}
 								},
 								{

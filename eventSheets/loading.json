@@ -1,0 +1,37 @@
+{
+	"name": "Loading",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "TittleScreen",
+					"sid": 969146891679152
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 755228904567258
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 373993003624775
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 225982881524323,
+					"parameters": {
+						"layout": "Tittle_Screen"
+					}
+				}
+			],
+			"sid": 870756261245583
+		}
+	],
+	"sid": 902154604190288
+}

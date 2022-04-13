@@ -51,6 +51,14 @@
 									"id": "reset-global-variables",
 									"objectClass": "System",
 									"sid": 554197001786330
+								},
+								{
+									"id": "set-font-color",
+									"objectClass": "txtforTimer",
+									"sid": 231645467368476,
+									"parameters": {
+										"color": "rgbEx(255, 255, 255)"
+									}
 								}
 							],
 							"sid": 439709087250932
@@ -165,9 +173,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "txtfroBullet",
-									"sid": 217964545567892,
+									"sid": 542829590930179,
 									"parameters": {
-										"text": "\"  \" &  GunBullets"
+										"text": "\" Ammo: \" &  GunBullets"
 									}
 								},
 								{
@@ -429,6 +437,56 @@
 									"conditions": [
 										{
 											"id": "is-overlapping-another-object",
+											"objectClass": "EarthSlime",
+											"sid": 577966848891458,
+											"parameters": {
+												"object": "Earth_spawner4"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "EarthSlime",
+											"sid": 540727451909163,
+											"parameters": {
+												"instance-variable": "Name",
+												"value": "4"
+											}
+										}
+									],
+									"sid": 968215531030918
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "EarthSlime",
+											"sid": 901887087048367,
+											"parameters": {
+												"object": "Earth_spawner5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "EarthSlime",
+											"sid": 680506400320436,
+											"parameters": {
+												"instance-variable": "Name",
+												"value": "5"
+											}
+										}
+									],
+									"sid": 984012971127703
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
 											"objectClass": "FireSlime",
 											"sid": 729460611749558,
 											"parameters": {
@@ -590,280 +648,6 @@
 										{
 											"id": "on-collision-with-another-object",
 											"objectClass": "Bullets",
-											"sid": 991015738724573,
-											"parameters": {
-												"object": "EarthSlime"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "EarthSlime",
-											"sid": 996275489443599,
-											"parameters": {
-												"instance-variable": "EarthSlime",
-												"value": "true"
-											}
-										},
-										{
-											"id": "add-to-eventvar",
-											"objectClass": "System",
-											"sid": 323672883301631,
-											"parameters": {
-												"variable": "Slimes",
-												"value": "1"
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "EarthSlime",
-											"sid": 754673957808446,
-											"parameters": {
-												"object": "Text_damage_3",
-												"layer": "1",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "destroy",
-											"objectClass": "Bullets",
-											"sid": 664812417247796
-										}
-									],
-									"sid": 905999719246228,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "EarthSlime",
-													"sid": 390107185636093,
-													"parameters": {
-														"instance-variable": "EarthSlime"
-													}
-												},
-												{
-													"id": "compare-instance-variable",
-													"objectClass": "EarthSlime",
-													"sid": 472532999864480,
-													"parameters": {
-														"instance-variable": "Name",
-														"comparison": 0,
-														"value": "1"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "spawn-another-object",
-													"objectClass": "EarthSlime",
-													"sid": 994199619409032,
-													"parameters": {
-														"object": "WallClimb",
-														"layer": "1",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "destroy",
-													"objectClass": "EarthSlime",
-													"sid": 284029684564295
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 653865088304029,
-													"parameters": {
-														"seconds": "10"
-													}
-												},
-												{
-													"type": "comment",
-													"text": "this is where the slime will be, please add position "
-												},
-												{
-													"id": "spawn-another-object",
-													"objectClass": "Earth_spawner1",
-													"sid": 517392239275829,
-													"parameters": {
-														"object": "EarthSlime",
-														"layer": "1",
-														"image-point": "1",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "set-size",
-													"objectClass": "EarthSlime",
-													"sid": 534671110711452,
-													"parameters": {
-														"width": "43.637395",
-														"height": "28.736821"
-													}
-												}
-											],
-											"sid": 416554382296965
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "EarthSlime",
-													"sid": 372697728268661,
-													"parameters": {
-														"instance-variable": "EarthSlime"
-													}
-												},
-												{
-													"id": "compare-instance-variable",
-													"objectClass": "EarthSlime",
-													"sid": 497287212598928,
-													"parameters": {
-														"instance-variable": "Name",
-														"comparison": 0,
-														"value": "2"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "spawn-another-object",
-													"objectClass": "EarthSlime",
-													"sid": 856936944634963,
-													"parameters": {
-														"object": "WallClimb",
-														"layer": "1",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "destroy",
-													"objectClass": "EarthSlime",
-													"sid": 942417823027092
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 690946707540811,
-													"parameters": {
-														"seconds": "10"
-													}
-												},
-												{
-													"type": "comment",
-													"text": "this is where the slime will be, please add position "
-												},
-												{
-													"id": "spawn-another-object",
-													"objectClass": "Earth_spawner2",
-													"sid": 305644313807515,
-													"parameters": {
-														"object": "EarthSlime",
-														"layer": "1",
-														"image-point": "1",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "set-size",
-													"objectClass": "EarthSlime",
-													"sid": 608157080951127,
-													"parameters": {
-														"width": "43.637395",
-														"height": "28.736821"
-													}
-												}
-											],
-											"sid": 389640481042194
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "is-boolean-instance-variable-set",
-													"objectClass": "EarthSlime",
-													"sid": 469862468258284,
-													"parameters": {
-														"instance-variable": "EarthSlime"
-													}
-												},
-												{
-													"id": "compare-instance-variable",
-													"objectClass": "EarthSlime",
-													"sid": 122384914267261,
-													"parameters": {
-														"instance-variable": "Name",
-														"comparison": 0,
-														"value": "3"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "spawn-another-object",
-													"objectClass": "EarthSlime",
-													"sid": 571508581850211,
-													"parameters": {
-														"object": "WallClimb",
-														"layer": "1",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "destroy",
-													"objectClass": "EarthSlime",
-													"sid": 299673459823307
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 892814256880908,
-													"parameters": {
-														"seconds": "10"
-													}
-												},
-												{
-													"type": "comment",
-													"text": "this is where the slime will be, please add position "
-												},
-												{
-													"id": "spawn-another-object",
-													"objectClass": "Earth_spawner3",
-													"sid": 882951865444529,
-													"parameters": {
-														"object": "EarthSlime",
-														"layer": "1",
-														"image-point": "1",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "set-size",
-													"objectClass": "EarthSlime",
-													"sid": 142130036812385,
-													"parameters": {
-														"width": "43.637395",
-														"height": "28.736821"
-													}
-												}
-											],
-											"sid": 899303308010567
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-collision-with-another-object",
-											"objectClass": "Bullets",
 											"sid": 124950948282929,
 											"parameters": {
 												"object": "AcidSlime"
@@ -928,6 +712,396 @@
 												}
 											],
 											"sid": 363551968498686
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Bullets",
+											"sid": 182325221449493,
+											"parameters": {
+												"object": "EarthSlime"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "EarthSlime",
+											"sid": 804670856979246,
+											"parameters": {
+												"instance-variable": "EarthSlime",
+												"value": "true"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 780493613010148,
+											"parameters": {
+												"variable": "Slimes",
+												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "EarthSlime",
+											"sid": 830068909996643,
+											"parameters": {
+												"object": "Text_damage_3",
+												"layer": "1",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Bullets",
+											"sid": 774642134609209
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 599883901470335,
+											"parameters": {
+												"audio-file": "quick_slime",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 444630112788250,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "EarthSlime",
+													"sid": 621357371088072,
+													"parameters": {
+														"instance-variable": "EarthSlime"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EarthSlime",
+													"sid": 445348568851510,
+													"parameters": {
+														"instance-variable": "Name",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "EarthSlime",
+													"sid": 451050283925048,
+													"parameters": {
+														"object": "WallClimb",
+														"layer": "1",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "EarthSlime",
+													"sid": 564638278497624
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 875879311000591,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"type": "comment",
+													"text": "this is where the slime will be, please add position "
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Earth_spawner1",
+													"sid": 987406035368660,
+													"parameters": {
+														"object": "EarthSlime",
+														"layer": "1",
+														"image-point": "1",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "EarthSlime",
+													"sid": 994377826218494,
+													"parameters": {
+														"width": "43.637395",
+														"height": "28.736821"
+													}
+												}
+											],
+											"sid": 321221125040887
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "EarthSlime",
+													"sid": 228922481964234,
+													"parameters": {
+														"instance-variable": "EarthSlime"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EarthSlime",
+													"sid": 622442823764664,
+													"parameters": {
+														"instance-variable": "Name",
+														"comparison": 0,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "EarthSlime",
+													"sid": 993554703513414,
+													"parameters": {
+														"object": "WallClimb",
+														"layer": "1",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "EarthSlime",
+													"sid": 739318787032857
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 270739290113939,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"type": "comment",
+													"text": "this is where the slime will be, please add position "
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Earth_spawner2",
+													"sid": 589306745983971,
+													"parameters": {
+														"object": "EarthSlime",
+														"layer": "1",
+														"image-point": "1",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "EarthSlime",
+													"sid": 788970678435115,
+													"parameters": {
+														"width": "43.637395",
+														"height": "28.736821"
+													}
+												}
+											],
+											"sid": 387632665675440
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "EarthSlime",
+													"sid": 547118635887352,
+													"parameters": {
+														"instance-variable": "EarthSlime"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EarthSlime",
+													"sid": 241092115530288,
+													"parameters": {
+														"instance-variable": "Name",
+														"comparison": 0,
+														"value": "3"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "EarthSlime",
+													"sid": 686819971734356,
+													"parameters": {
+														"object": "WallClimb",
+														"layer": "1",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "EarthSlime",
+													"sid": 313051676730484
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 546102359772087,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"type": "comment",
+													"text": "this is where the slime will be, please add position "
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Earth_spawner3",
+													"sid": 115654883780668,
+													"parameters": {
+														"object": "EarthSlime",
+														"layer": "1",
+														"image-point": "1",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "EarthSlime",
+													"sid": 233050860902580,
+													"parameters": {
+														"width": "43.637395",
+														"height": "28.736821"
+													}
+												}
+											],
+											"sid": 401120870004562
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "EarthSlime",
+													"sid": 753155634164978,
+													"parameters": {
+														"instance-variable": "EarthSlime"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EarthSlime",
+													"sid": 415886742190622,
+													"parameters": {
+														"instance-variable": "Name",
+														"comparison": 0,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "spawn-another-object",
+													"objectClass": "EarthSlime",
+													"sid": 441886722413644,
+													"parameters": {
+														"object": "WallClimb",
+														"layer": "1",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "destroy",
+													"objectClass": "EarthSlime",
+													"sid": 296851883344905
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 219358909557900,
+													"parameters": {
+														"seconds": "10"
+													}
+												},
+												{
+													"type": "comment",
+													"text": "this is where the slime will be, please add position "
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Earth_spawner4",
+													"sid": 138195562285681,
+													"parameters": {
+														"object": "EarthSlime",
+														"layer": "1",
+														"image-point": "1",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "EarthSlime",
+													"sid": 104544018004252,
+													"parameters": {
+														"width": "43.637395",
+														"height": "28.736821"
+													}
+												}
+											],
+											"sid": 573017195221539
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "EarthSlime",
+													"sid": 667281407297328,
+													"parameters": {
+														"instance-variable": "EarthSlime"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EarthSlime",
+													"sid": 843368527561843,
+													"parameters": {
+														"instance-variable": "Name",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "EarthSlime",
+													"sid": 622477047238221
+												}
+											],
+											"sid": 962493654580251
 										}
 									]
 								},
@@ -5021,9 +5195,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "txtforJump",
-									"sid": 652626859409328,
+									"sid": 400323954940973,
 									"parameters": {
-										"text": "\"Jump Boost \""
+										"text": "\"Double Jump \""
 									}
 								},
 								{
@@ -5397,6 +5571,57 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 688302596981103,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 643005622278501,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "500"
+									}
+								}
+							],
+							"sid": 348604959999917
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 362918450333914,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 374398466603600,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "600"
+									}
+								}
+							],
+							"sid": 243034394806652
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "on-key-pressed",
 									"objectClass": "Keyboard",
 									"sid": 975427323068192,
@@ -5426,19 +5651,19 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 236493995718344,
+									"sid": 982118835711494,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y-1980"
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 822297151893372,
+									"sid": 416551911112549,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.Y-1500"
+										"vector-x": "Self.Platform.VectorX+Self.Platform.JumpStrength"
 									}
 								}
 							],
@@ -5477,19 +5702,19 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 821382800730891,
+									"sid": 563015032898875,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y-1980"
+										"vector-y": "Self.Platform.VectorY-Self.Platform.JumpStrength"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 819231460829398,
+									"sid": 487656016646139,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.Y-1500"
+										"vector-x": "Self.Platform.VectorX-Self.Platform.JumpStrength"
 									}
 								}
 							],
@@ -5857,7 +6082,7 @@
 				},
 				{
 					"eventType": "group",
-					"disabled": true,
+					"disabled": false,
 					"title": "WallScalingAbility4",
 					"description": "",
 					"isActiveOnStart": true,
@@ -5882,8 +6107,7 @@
 									}
 								}
 							],
-							"sid": 501893713408930,
-							"disabled": true
+							"sid": 501893713408930
 						},
 						{
 							"eventType": "block",
@@ -5908,8 +6132,7 @@
 									}
 								}
 							],
-							"sid": 961506521405947,
-							"disabled": true
+							"sid": 961506521405947
 						},
 						{
 							"eventType": "block",
@@ -5935,8 +6158,7 @@
 									}
 								}
 							],
-							"sid": 320860459164911,
-							"disabled": true
+							"sid": 320860459164911
 						},
 						{
 							"eventType": "block",
@@ -5987,8 +6209,7 @@
 									}
 								}
 							],
-							"sid": 935783625830592,
-							"disabled": true
+							"sid": 935783625830592
 						},
 						{
 							"eventType": "block",
@@ -6039,8 +6260,7 @@
 									}
 								}
 							],
-							"sid": 101688984189517,
-							"disabled": true
+							"sid": 101688984189517
 						},
 						{
 							"eventType": "block",
@@ -6091,8 +6311,7 @@
 									}
 								}
 							],
-							"sid": 720575045714360,
-							"disabled": true
+							"sid": 720575045714360
 						},
 						{
 							"eventType": "block",
@@ -6143,8 +6362,7 @@
 									}
 								}
 							],
-							"sid": 622103115584794,
-							"disabled": true
+							"sid": 622103115584794
 						},
 						{
 							"eventType": "block",
@@ -6196,8 +6414,7 @@
 									}
 								}
 							],
-							"sid": 915633496677724,
-							"disabled": true
+							"sid": 915633496677724
 						},
 						{
 							"eventType": "block",
@@ -6249,8 +6466,7 @@
 									}
 								}
 							],
-							"sid": 848034463629154,
-							"disabled": true
+							"sid": 848034463629154
 						},
 						{
 							"eventType": "block",
@@ -6302,8 +6518,7 @@
 									}
 								}
 							],
-							"sid": 405366049034500,
-							"disabled": true
+							"sid": 405366049034500
 						},
 						{
 							"eventType": "block",
@@ -6355,8 +6570,7 @@
 									}
 								}
 							],
-							"sid": 725538308350623,
-							"disabled": true
+							"sid": 725538308350623
 						},
 						{
 							"eventType": "block",
@@ -6404,8 +6618,7 @@
 									}
 								}
 							],
-							"sid": 616038454186564,
-							"disabled": true
+							"sid": 616038454186564
 						},
 						{
 							"eventType": "block",
@@ -6478,8 +6691,7 @@
 									}
 								}
 							],
-							"sid": 253792783890839,
-							"disabled": true
+							"sid": 253792783890839
 						},
 						{
 							"eventType": "block",
@@ -6520,8 +6732,7 @@
 									}
 								}
 							],
-							"sid": 249854645707852,
-							"disabled": true
+							"sid": 249854645707852
 						},
 						{
 							"eventType": "block",
@@ -6547,7 +6758,8 @@
 									}
 								}
 							],
-							"sid": 153128704054629
+							"sid": 153128704054629,
+							"disabled": true
 						}
 					],
 					"sid": 828242650617593

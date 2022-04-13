@@ -692,8 +692,8 @@
 					"properties": {
 						"text": "You made it to the end,\ndefeating the bad guy, \nyou are now the Good, not\nthe bad, but still slimey",
 						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 50,
+						"font": "GloriaHallelujah-Regular",
+						"size": 48,
 						"line-height": 0,
 						"bold": true,
 						"italic": true,
@@ -738,10 +738,10 @@
 						}
 					},
 					"world": {
-						"x": 576,
-						"y": 716,
-						"width": 777,
-						"height": 316,
+						"x": 549,
+						"y": 695,
+						"width": 1022,
+						"height": 399,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -759,8 +759,8 @@
 					"properties": {
 						"text": "You made it to the end,\ndefeating the bad guy, \nyou are now the Good, not\nthe bad, but still slimey",
 						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 50,
+						"font": "GloriaHallelujah-Regular",
+						"size": 48,
 						"line-height": 0,
 						"bold": true,
 						"italic": true,
@@ -805,10 +805,10 @@
 						}
 					},
 					"world": {
-						"x": 582,
-						"y": 710,
-						"width": 707,
-						"height": 314,
+						"x": 556,
+						"y": 692,
+						"width": 918,
+						"height": 437,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -826,8 +826,8 @@
 					"properties": {
 						"text": "You made it to the end,\ndefeating the bad guy, \nyou are now the Good, not\nthe bad, but still slimey",
 						"enable-bbcode": true,
-						"font": "Impact",
-						"size": 50,
+						"font": "GloriaHallelujah-Regular",
+						"size": 48,
 						"line-height": 0,
 						"bold": true,
 						"italic": true,
@@ -872,10 +872,10 @@
 						}
 					},
 					"world": {
-						"x": 593,
-						"y": 712,
-						"width": 1029,
-						"height": 408,
+						"x": 562,
+						"y": 694,
+						"width": 1078,
+						"height": 418,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -886,6 +886,36 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "TittleScreen",
+					"properties": {
+						"type": "button",
+						"text": "Tittle Screen",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 87,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 661,
+						"y": 852,
+						"width": 190,
+						"height": 36,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],
@@ -927,5 +957,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Loading"
 }
