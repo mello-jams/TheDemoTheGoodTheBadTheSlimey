@@ -75,6 +75,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 355539959206123
+		},
+		{
+			"name": "Timer",
+			"type": "number",
+			"desc": "",
+			"sid": 213146403386060
 		}
 	],
 	"behaviorTypes": [
@@ -87,6 +93,11 @@
 			"behaviorId": "scrollto",
 			"name": "ScrollTo",
 			"sid": 101481047241297
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer2",
+			"sid": 469956649560435
 		}
 	],
 	"effectTypes": [],

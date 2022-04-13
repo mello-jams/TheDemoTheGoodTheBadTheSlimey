@@ -380,7 +380,8 @@
 						"Strapped_Ability": false,
 						"PoisonNum": 0,
 						"Reload": false,
-						"Health_Ability": false
+						"Health_Ability": false,
+						"Timer": 0
 					},
 					"behaviors": {
 						"Platform": {
@@ -401,6 +402,9 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Timer2": {
+							"properties": {}
 						}
 					},
 					"world": {

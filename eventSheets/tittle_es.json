@@ -2,6 +2,10 @@
 	"name": "Tittle_ES",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Highscore"
+		},
+		{
 			"eventType": "variable",
 			"name": "IsAnyoneHere",
 			"type": "boolean",
@@ -78,6 +82,14 @@
 					"behaviorType": "Platform",
 					"parameters": {
 						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtforHighscore",
+					"sid": 587871237715309,
+					"parameters": {
+						"text": "\"HS: \" & txtforHighscore.Highscore"
 					}
 				}
 			],

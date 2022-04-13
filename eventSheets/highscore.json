@@ -1,0 +1,80 @@
+{
+	"name": "Highscore",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Timer6",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 523951355014041
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 239288802882248,
+							"parameters": {
+								"first-value": "txtforHighscore.Highscore",
+								"comparison": 2,
+								"second-value": "txtforTimer.Timer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "txtforHighscore",
+							"sid": 320852833816715,
+							"parameters": {
+								"instance-variable": "Highscore",
+								"value": "txtforTimer.Timer"
+							}
+						}
+					],
+					"sid": 466300698790579
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 450411248270854
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 526140857896692,
+							"parameters": {
+								"first-value": "txtforHighscore.Highscore",
+								"comparison": 4,
+								"second-value": "txtforTimer.Timer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "txtforHighscore",
+							"sid": 340295982462682,
+							"parameters": {
+								"instance-variable": "Highscore",
+								"value": "txtforHighscore.Highscore"
+							}
+						}
+					],
+					"sid": 559150561126838
+				}
+			],
+			"sid": 701630562877418
+		}
+	],
+	"sid": 157574120632246
+}

@@ -112,6 +112,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "LOS",
 			"name": "Line of sight",
 			"author": "Scirra",
@@ -201,7 +209,9 @@
 					"PowerCounter",
 					"txtforWall",
 					"txtforJump",
-					"txtfroBullet"
+					"txtfroBullet",
+					"txtforTimer",
+					"txtforHighscore"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -365,7 +375,9 @@
 			"Tittle_ES",
 			"Level2_ES",
 			"Boss_ES",
-			"Master_ES"
+			"Master_ES",
+			"Timer",
+			"Highscore"
 		],
 		"subfolders": []
 	},

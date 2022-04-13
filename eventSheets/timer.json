@@ -1,0 +1,157 @@
+{
+	"name": "Timer",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "IsAnyoneHere2",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 855811143075176
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Timer5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 690507827345426
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "txtforTimer",
+							"sid": 920952658910792,
+							"parameters": {
+								"text": "\"Time: \" & txtforTimer.Timer"
+							}
+						}
+					],
+					"sid": 647871151529043
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 880169553774545,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "txtforTimer",
+							"sid": 660153836381896,
+							"parameters": {
+								"instance-variable": "Timer",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 574551490526683
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-topbottom",
+							"objectClass": "txtforTimer",
+							"sid": 882321297963454,
+							"parameters": {
+								"which": "bottom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-top",
+							"objectClass": "txtforTimer",
+							"sid": 167780328034873
+						}
+					],
+					"sid": 367128090880309
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-end-of-layout",
+							"objectClass": "System",
+							"sid": 439808060468398
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 234924062487853,
+							"parameters": {
+								"first-value": "txtforHighscore.Highscore",
+								"comparison": 2,
+								"second-value": "txtforTimer.Timer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "txtforHighscore",
+							"sid": 188653097966313,
+							"parameters": {
+								"instance-variable": "Highscore",
+								"value": "txtforTimer.Timer"
+							}
+						}
+					],
+					"sid": 102612479590735
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-end-of-layout",
+							"objectClass": "System",
+							"sid": 895452382983606
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 288595288452538,
+							"parameters": {
+								"first-value": "txtforHighscore.Highscore",
+								"comparison": 4,
+								"second-value": "txtforTimer.Timer"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "txtforHighscore",
+							"sid": 199199702910643,
+							"parameters": {
+								"instance-variable": "Highscore",
+								"value": "txtforHighscore.Highscore"
+							}
+						}
+					],
+					"sid": 507563979121564
+				}
+			],
+			"sid": 816601913126997
+		}
+	],
+	"sid": 582027647918325
+}

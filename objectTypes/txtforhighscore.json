@@ -1,0 +1,27 @@
+{
+	"name": "txtforHighscore",
+	"plugin-id": "Text",
+	"sid": 848224072560884,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "Highscore",
+			"type": "number",
+			"desc": "",
+			"sid": 954963976603007
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 678371167471106
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 903354720132450
+		}
+	],
+	"effectTypes": []
+}

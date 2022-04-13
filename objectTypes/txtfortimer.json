@@ -1,0 +1,27 @@
+{
+	"name": "txtforTimer",
+	"plugin-id": "Text",
+	"sid": 460843290001855,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "Timer",
+			"type": "number",
+			"desc": "",
+			"sid": 153580122161864
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 522702308634184
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 414715367141904
+		}
+	],
+	"effectTypes": []
+}

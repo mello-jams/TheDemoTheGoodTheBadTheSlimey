@@ -22,6 +22,26 @@
 			"sid": 215586959111482
 		},
 		{
+			"eventType": "variable",
+			"name": "Timer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 309624793792968
+		},
+		{
+			"eventType": "variable",
+			"name": "TimeRem",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 395030793945983
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Intro_events",
@@ -729,6 +749,17 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "Player",
+					"sid": 736994852500379,
+					"behaviorType": "Timer2",
+					"parameters": {
+						"duration": "1",
+						"type": "regular",
+						"tag": "\"Speed\""
+					}
 				}
 			],
 			"sid": 349757130408683
@@ -943,6 +974,33 @@
 				}
 			],
 			"sid": 613302192526154
+		},
+		{
+			"functionName": "Timer",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 891277649790589,
+					"parameters": {
+						"variable": "TimeRem",
+						"value": "Timer"
+					}
+				}
+			],
+			"sid": 779264746342787,
+			"disabled": true
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Timer"
 		}
 	],
 	"sid": 202001885289933
