@@ -2694,15 +2694,6 @@
 									}
 								},
 								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 533814828618447,
-									"parameters": {
-										"animation": "\"walking\"",
-										"from": "beginning"
-									}
-								},
-								{
 									"id": "set-mirrored",
 									"objectClass": "Player",
 									"sid": 156321823035583,
@@ -2733,15 +2724,6 @@
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "jump"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 467273302448315,
-									"parameters": {
-										"animation": "\"NormalJump\"",
-										"from": "beginning"
 									}
 								},
 								{
@@ -2778,15 +2760,6 @@
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "right"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 324912546039486,
-									"parameters": {
-										"animation": "\"walking\"",
-										"from": "beginning"
 									}
 								},
 								{
@@ -5146,6 +5119,252 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "animation buggs",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-moved",
+									"objectClass": "Player",
+									"sid": 236373056624611,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 827155714387650,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 832321846443749,
+									"parameters": {
+										"instance-variable": "Jump_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 687519422874097,
+									"parameters": {
+										"animation": "\"walking\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-double-jump",
+									"objectClass": "Player",
+									"sid": 869901459289736,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 856000487513518,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "450"
+									}
+								}
+							],
+							"sid": 188266207615280
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-jump",
+									"objectClass": "Player",
+									"sid": 388635114325164,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 287067738543740,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 412662644473507,
+									"parameters": {
+										"instance-variable": "Jump_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 299360221081963,
+									"parameters": {
+										"animation": "\"NormalJump\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-double-jump",
+									"objectClass": "Player",
+									"sid": 868879958730207,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 173290649672837,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "450"
+									}
+								}
+							],
+							"sid": 181908987738235
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-stopped",
+									"objectClass": "Player",
+									"sid": 192426855442312,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 822040914300897,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 627610900152715,
+									"parameters": {
+										"instance-variable": "Jump_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 808381853949377,
+									"parameters": {
+										"animation": "\"idle\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-double-jump",
+									"objectClass": "Player",
+									"sid": 410262342103984,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 617623433556975,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "450"
+									}
+								}
+							],
+							"sid": 323649440742673
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-fall",
+									"objectClass": "Player",
+									"sid": 591867235136455,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 932626311588314,
+									"parameters": {
+										"instance-variable": "WallScaling_Ability"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 233317561218899,
+									"parameters": {
+										"instance-variable": "Jump_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 137808816664035,
+									"parameters": {
+										"animation": "\"idle\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-double-jump",
+									"objectClass": "Player",
+									"sid": 962415869905426,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Player",
+									"sid": 817231610793906,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "450"
+									}
+								}
+							],
+							"sid": 538620044663548
+						}
+					],
+					"sid": 210860007663260
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "JumpBoostAbilty",
 					"description": "",
 					"isActiveOnStart": true,
@@ -5231,59 +5450,6 @@
 								}
 							],
 							"sid": 561138043132062
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Player",
-									"sid": 130993510831030,
-									"parameters": {
-										"instance-variable": "WallScaling_Ability"
-									},
-									"isInverted": true
-								},
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Player",
-									"sid": 361438632152197,
-									"parameters": {
-										"instance-variable": "Jump_Ability"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 995529710054494,
-									"parameters": {
-										"animation": "\"Default\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-double-jump",
-									"objectClass": "Player",
-									"sid": 697829957099571,
-									"behaviorType": "Platform",
-									"parameters": {
-										"state": "disabled"
-									}
-								},
-								{
-									"id": "set-jump-strength",
-									"objectClass": "Player",
-									"sid": 642564818596762,
-									"behaviorType": "Platform",
-									"parameters": {
-										"jump-strength": "450"
-									}
-								}
-							],
-							"sid": 311114966751941
 						},
 						{
 							"eventType": "block",

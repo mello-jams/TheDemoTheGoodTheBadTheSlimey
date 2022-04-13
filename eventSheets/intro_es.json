@@ -416,15 +416,6 @@
 							"parameters": {
 								"control": "jump"
 							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 742143502181805,
-							"parameters": {
-								"animation": "\"NormalJump\"",
-								"from": "beginning"
-							}
 						}
 					],
 					"sid": 875214662717532
@@ -460,15 +451,6 @@
 							"parameters": {
 								"control": "jump"
 							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 660749634280096,
-							"parameters": {
-								"animation": "\"NormalJump\"",
-								"from": "beginning"
-							}
 						}
 					],
 					"sid": 461719584898071
@@ -496,15 +478,6 @@
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 390748473569766,
-							"parameters": {
-								"animation": "\"walking\"",
-								"from": "beginning"
-							}
-						},
-						{
 							"id": "set-mirrored",
 							"objectClass": "Player",
 							"sid": 728640773620181,
@@ -525,9 +498,32 @@
 							"parameters": {
 								"key": 87
 							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player",
+							"sid": 108462246909143,
+							"disabled": true,
+							"parameters": {
+								"animation": "\"idle\""
+							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player",
+							"sid": 366029055292510,
+							"disabled": true,
+							"parameters": {
+								"animation": "\"walking\""
+							}
 						}
 					],
 					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "Player",
+							"sid": 850643081852469
+						},
 						{
 							"id": "simulate-control",
 							"objectClass": "Player",
@@ -535,15 +531,6 @@
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 236687883888871,
-							"parameters": {
-								"animation": "\"NormalJump\"",
-								"from": "beginning"
 							}
 						},
 						{
@@ -583,15 +570,6 @@
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "Player",
-							"sid": 699422245555023,
-							"parameters": {
-								"animation": "\"walking\"",
-								"from": "beginning"
-							}
-						},
-						{
 							"id": "set-mirrored",
 							"objectClass": "Player",
 							"sid": 479545690957158,
@@ -626,6 +604,98 @@
 						}
 					],
 					"sid": 516415973817226
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-stopped",
+							"objectClass": "Player",
+							"sid": 280102224075130,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 567533730122194,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 719118351597460
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-moved",
+							"objectClass": "Player",
+							"sid": 939527532003917,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 418945285022232,
+							"parameters": {
+								"animation": "\"walking\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 712477144413299
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-jump",
+							"objectClass": "Player",
+							"sid": 785380229641095,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 600604809293999,
+							"parameters": {
+								"animation": "\"NormalJump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 998138677283249
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fall",
+							"objectClass": "Player",
+							"sid": 324121156901745,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 306050601313634,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 673479824703103
 				}
 			],
 			"sid": 738287547353478
