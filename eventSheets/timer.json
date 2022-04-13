@@ -2,14 +2,8 @@
 	"name": "Timer",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "IsAnyoneHere2",
-			"type": "boolean",
-			"initialValue": "true",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 855811143075176
+			"eventType": "include",
+			"includeSheet": "Highscore"
 		},
 		{
 			"eventType": "group",
@@ -96,10 +90,10 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 234924062487853,
+							"sid": 199349499753478,
 							"parameters": {
 								"first-value": "txtforHighscore.Highscore",
-								"comparison": 2,
+								"comparison": 4,
 								"second-value": "txtforTimer.Timer"
 							}
 						}
@@ -128,10 +122,10 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 288595288452538,
+							"sid": 880874195970813,
 							"parameters": {
 								"first-value": "txtforHighscore.Highscore",
-								"comparison": 4,
+								"comparison": 2,
 								"second-value": "txtforTimer.Timer"
 							}
 						}

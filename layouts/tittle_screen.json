@@ -1062,7 +1062,7 @@
 			"global": false
 		},
 		{
-			"name": "ighscore",
+			"name": "Highscore",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -1090,7 +1090,7 @@
 					},
 					"uid": 101,
 					"instanceVariables": {
-						"Highscore": 0
+						"Highscore": 99999
 					},
 					"behaviors": {
 						"Anchor": {
@@ -1107,8 +1107,8 @@
 						}
 					},
 					"world": {
-						"x": 364,
-						"y": 499,
+						"x": 304,
+						"y": 484,
 						"width": 99.26502390813806,
 						"height": 31.709997852516196,
 						"originX": 0,

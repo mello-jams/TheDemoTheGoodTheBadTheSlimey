@@ -760,6 +760,24 @@
 						"type": "regular",
 						"tag": "\"Speed\""
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 876043154558520,
+					"parameters": {
+						"variable": "TimerisThere",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 683070722104519,
+					"parameters": {
+						"variable": "HighscoreisThere",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 349757130408683
@@ -1001,6 +1019,65 @@
 		{
 			"eventType": "include",
 			"includeSheet": "Timer"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 666024937710960
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 369125094990685,
+					"parameters": {
+						"variable": "TimerisThere"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "txtforTimer",
+					"sid": 203846872083323,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 232565091660891
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 249872436173940
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 815009385761547,
+					"parameters": {
+						"variable": "HighscoreisThere"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "txtforHighscore",
+					"sid": 355828276565103,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 995516217240871
 		}
 	],
 	"sid": 202001885289933

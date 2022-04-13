@@ -16,6 +16,26 @@
 			"sid": 781252742091124
 		},
 		{
+			"eventType": "variable",
+			"name": "TimerisThere",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 455882223581774
+		},
+		{
+			"eventType": "variable",
+			"name": "HighscoreisThere",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 695133533810424
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -91,6 +111,20 @@
 					"parameters": {
 						"text": "\"HS: \" & txtforHighscore.Highscore"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "txtforTimer",
+					"sid": 150908286204805,
+					"parameters": {
+						"instance-variable": "Timer",
+						"value": "0"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 465211262034891
 				}
 			],
 			"sid": 936761424690117
@@ -281,6 +315,65 @@
 				}
 			],
 			"sid": 548320913643860
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 257850533479935
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 887910711087139,
+					"parameters": {
+						"variable": "TimerisThere"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "txtforTimer",
+					"sid": 699492126045954,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 483515157226270
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 854942574777988
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 889823566472206,
+					"parameters": {
+						"variable": "HighscoreisThere"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "txtforHighscore",
+					"sid": 470037137700642,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 838517169010312
 		}
 	],
 	"sid": 776700732484750
