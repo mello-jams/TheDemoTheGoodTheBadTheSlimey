@@ -985,11 +985,33 @@
 						"origin": "center"
 					},
 					"uid": 141,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Jumpheremaybe": false,
+						"wallScalingmayb": false,
+						"Speedheremaybe": false
+					},
 					"behaviors": {
 						"Pin": {
 							"properties": {
 								"destroy": false
+							}
+						}
+					},
+					"effects": {
+						"GlowHorizontal": {
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"GlowVertical": {
+							"parameters": {
+								"intensity": 1
+							}
+						},
+						"HighlightShadow": {
+							"parameters": {
+								"shadow-factor": 0,
+								"highlight-factor": 1
 							}
 						}
 					},
@@ -1259,7 +1281,7 @@
 	"effectTypes": [],
 	"width": 3000,
 	"height": 1200,
-	"unboundedScrolling": true,
+	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",

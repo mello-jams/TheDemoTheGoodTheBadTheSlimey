@@ -3,7 +3,26 @@
 	"plugin-id": "Text",
 	"sid": 498729279941457,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Jumpheremaybe",
+			"type": "boolean",
+			"desc": "",
+			"sid": 847594912224843
+		},
+		{
+			"name": "wallScalingmayb",
+			"type": "boolean",
+			"desc": "",
+			"sid": 169071594616791
+		},
+		{
+			"name": "Speedheremaybe",
+			"type": "boolean",
+			"desc": "",
+			"sid": 618490262401305
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pin",
@@ -11,5 +30,18 @@
 			"sid": 368535966646139
 		}
 	],
-	"effectTypes": []
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		},
+		{
+			"effectId": "glowvertical",
+			"name": "GlowVertical"
+		},
+		{
+			"effectId": "highlightshadow",
+			"name": "HighlightShadow"
+		}
+	]
 }
