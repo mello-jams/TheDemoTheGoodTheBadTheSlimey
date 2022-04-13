@@ -178,7 +178,10 @@
 			"Video",
 			"Tutorial1",
 			"TittleScreen",
-			"REstart"
+			"REstart",
+			"TrainPlaceholder",
+			"TrainPlaceholder2",
+			"TrainPlaceholder3"
 		],
 		"subfolders": [
 			{

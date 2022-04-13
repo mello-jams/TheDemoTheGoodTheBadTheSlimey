@@ -1,0 +1,49 @@
+{
+	"name": "TrainPlaceholder3",
+	"plugin-id": "Sprite",
+	"sid": 888303493093165,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1002,
+						"height": 599,
+						"originX": 0.5,
+						"originY": 0.330550918196995,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5086983,
+						"collisionPoly": {
+							"points": [
+								0.000998003992015968,
+								0,
+								0.999001996007984,
+								0,
+								0.999001996007984,
+								0.998330550918197,
+								0.000998003992015968,
+								0.998330550918197
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 417278029807571,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
