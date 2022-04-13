@@ -19,6 +19,11 @@
 	],
 	"behaviorTypes": [
 		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 132370804983358
+		},
+		{
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
 			"sid": 545557693667290
@@ -27,11 +32,6 @@
 			"behaviorId": "MoveTo",
 			"name": "MoveTo",
 			"sid": 549578403591759
-		},
-		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 132370804983358
 		}
 	],
 	"effectTypes": [],

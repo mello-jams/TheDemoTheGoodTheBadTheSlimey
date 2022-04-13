@@ -227,7 +227,8 @@
 					"Magma",
 					"LighteningBolt",
 					"FrostSlime",
-					"WaterSlime2"
+					"WaterSlime2",
+					"BossSlime"
 				],
 				"subfolders": [],
 				"name": "Slimes"

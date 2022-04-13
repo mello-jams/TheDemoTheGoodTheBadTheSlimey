@@ -4259,6 +4259,28 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-created",
+									"objectClass": "LavaSlime",
+									"sid": 839016877901223
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "LavaSlime",
+									"sid": 710652675481814,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								}
+							],
+							"sid": 793029857533918
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Player",
 									"sid": 711517088950500,
