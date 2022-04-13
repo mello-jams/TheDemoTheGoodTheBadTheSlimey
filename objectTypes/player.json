@@ -69,6 +69,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 288321406428255
+		},
+		{
+			"name": "Health_Ability",
+			"type": "boolean",
+			"desc": "",
+			"sid": 355539959206123
 		}
 	],
 	"behaviorTypes": [

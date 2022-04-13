@@ -6123,59 +6123,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Player",
-									"sid": 628261030479609,
-									"parameters": {
-										"instance-variable": "Speed_Ability"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-max-speed",
-									"objectClass": "Player",
-									"sid": 760385174097926,
-									"behaviorType": "Platform",
-									"parameters": {
-										"max-speed": "660"
-									}
-								}
-							],
-							"sid": 477190462953860,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Player",
-									"sid": 263869386932619,
-									"parameters": {
-										"instance-variable": "Speed_Ability"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-max-speed",
-									"objectClass": "Player",
-									"sid": 810950520841229,
-									"behaviorType": "Platform",
-									"parameters": {
-										"max-speed": "330"
-									}
-								}
-							],
-							"sid": 362869475706550,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "on-created",
 									"objectClass": "HealthPotion",
 									"sid": 114208814913745
@@ -6222,21 +6169,11 @@
 									"sid": 488979829541947
 								},
 								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 610744860892966,
-									"disabled": true,
-									"parameters": {
-										"animation": "\"Default\"",
-										"from": "beginning"
-									}
-								},
-								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Player",
-									"sid": 632298411336171,
+									"sid": 989919300779842,
 									"parameters": {
-										"instance-variable": "Speed_Ability",
+										"instance-variable": "Health_Ability",
 										"value": "true"
 									}
 								},
@@ -6251,9 +6188,9 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Player",
-									"sid": 705053312810468,
+									"sid": 645655444823229,
 									"parameters": {
-										"instance-variable": "Speed_Ability",
+										"instance-variable": "Health_Ability",
 										"value": "false"
 									}
 								}
@@ -6266,9 +6203,9 @@
 								{
 									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Player",
-									"sid": 411792438145577,
+									"sid": 348288847639976,
 									"parameters": {
-										"instance-variable": "Speed_Ability"
+										"instance-variable": "Health_Ability"
 									}
 								}
 							],
@@ -6293,9 +6230,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 241826861232532,
+									"sid": 146167276859930,
 									"parameters": {
-										"animation": "\"Default\"",
+										"animation": "\"idle\"",
 										"from": "beginning"
 									}
 								}
@@ -6304,6 +6241,318 @@
 						}
 					],
 					"sid": 619257761515094
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Speed",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 460405948708181,
+									"parameters": {
+										"instance-variable": "Speed_Ability"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 876395572513004,
+									"disabled": true,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "660"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 221740106088091,
+									"parameters": {
+										"animation": "\"Slime\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 190075216137367
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 316933368897396,
+									"parameters": {
+										"instance-variable": "Speed_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 564358063584749,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "330"
+									}
+								}
+							],
+							"sid": 938637251740095,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "SpeedPotion",
+									"sid": 677395427006147
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "SpeedPotion",
+									"sid": 478079716693897,
+									"parameters": {
+										"width": "22.204582",
+										"height": "28.372522"
+									}
+								}
+							],
+							"sid": 955513189025202
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 696430021495268,
+									"parameters": {
+										"object": "SpeedPotion"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Player",
+									"sid": 934658137592918,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "3"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "SpeedPotion",
+									"sid": 213185013698465
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 619667061908548,
+									"parameters": {
+										"instance-variable": "Speed_Ability",
+										"value": "true"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 608863093907116,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 754994480253170,
+									"parameters": {
+										"instance-variable": "Speed_Ability",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 909641007500752
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 596087974349010,
+									"parameters": {
+										"object": "SpeedPotion"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 972872405579299,
+									"parameters": {
+										"instance-variable": "Speed_Ability"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SpeedPotion",
+									"sid": 509101592403670
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 128831361105739,
+									"parameters": {
+										"instance-variable": "Speed_Ability",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 303149106727314,
+									"parameters": {
+										"variable": "Counter",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 671143562189972
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 114979405543787,
+									"parameters": {
+										"object": "SpeedPotion"
+									}
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 865530451805120,
+									"parameters": {
+										"instance-variable": "Speed_Ability"
+									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 382738259531561,
+									"parameters": {
+										"variable": "Counter"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SpeedPotion",
+									"sid": 294624840756900
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 744220350878154,
+									"parameters": {
+										"instance-variable": "Speed_Ability",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 936729944930045,
+									"parameters": {
+										"variable": "Counter",
+										"value": "false"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 149692736257746,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 665305490551888,
+									"parameters": {
+										"instance-variable": "Speed_Ability",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 402356330054262,
+									"parameters": {
+										"variable": "Counter",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 989646060069233
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 193801477839342,
+									"parameters": {
+										"instance-variable": "Speed_Ability"
+									}
+								},
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 849033102764250,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 624162909866802,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "Player.Platform.Acceleration + 10"
+									}
+								}
+							],
+							"sid": 462782123825558
+						}
+					],
+					"sid": 591750330959364
 				}
 			],
 			"sid": 115448357419115

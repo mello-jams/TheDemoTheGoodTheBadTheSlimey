@@ -376,7 +376,8 @@
 						"Jump_Ability": false,
 						"Strapped_Ability": false,
 						"PoisonNum": 0,
-						"Reload": false
+						"Reload": false,
+						"Health_Ability": false
 					},
 					"behaviors": {
 						"Platform": {
