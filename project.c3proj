@@ -503,6 +503,16 @@
 					"name": "zap.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 423110652613300
+				},
+				{
+					"name": "slime_land.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 340691137250395
+				},
+				{
+					"name": "slime_jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 794215457807098
 				}
 			],
 			"subfolders": []

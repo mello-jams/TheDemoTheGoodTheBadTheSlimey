@@ -614,9 +614,9 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 696245924743564,
+							"sid": 309095467512868,
 							"parameters": {
-								"audio-file": "quick_slime",
+								"audio-file": "slime_land",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -689,6 +689,17 @@
 							"parameters": {
 								"animation": "\"NormalJump\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 360533741178104,
+							"parameters": {
+								"audio-file": "slime_jump",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
