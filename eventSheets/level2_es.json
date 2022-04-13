@@ -21,14 +21,14 @@
 								{
 									"id": "on-start-of-layout",
 									"objectClass": "System",
-									"sid": 733397926854863
+									"sid": 222221056393435
 								}
 							],
 							"actions": [
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 254437201305340,
+									"sid": 870469223013362,
 									"parameters": {
 										"animation": "\"Jump\"",
 										"from": "beginning"
@@ -37,7 +37,7 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Player",
-									"sid": 679117754365470,
+									"sid": 469535176669346,
 									"parameters": {
 										"instance-variable": "Strapped_Ability",
 										"value": "true"
@@ -46,10 +46,10 @@
 								{
 									"id": "reset-global-variables",
 									"objectClass": "System",
-									"sid": 297467098082081
+									"sid": 554197001786330
 								}
 							],
-							"sid": 754982924456539
+							"sid": 439709087250932
 						},
 						{
 							"eventType": "block",
@@ -57,14 +57,14 @@
 								{
 									"id": "on-start-of-layout",
 									"objectClass": "System",
-									"sid": 685424175565580
+									"sid": 842811755685272
 								}
 							],
 							"actions": [
 								{
 									"id": "pin-to-object-imagepoint",
 									"objectClass": "Player_healthbar",
-									"sid": 789606262922888,
+									"sid": 885396792470358,
 									"behaviorType": "Pin",
 									"parameters": {
 										"pin-to": "Player",
@@ -78,7 +78,7 @@
 								{
 									"id": "pin-to-object-imagepoint",
 									"objectClass": "PowerCounter",
-									"sid": 382216314867103,
+									"sid": 924406190012144,
 									"behaviorType": "Pin",
 									"parameters": {
 										"pin-to": "Player",
@@ -86,13 +86,13 @@
 										"angle": true,
 										"width-type": "no",
 										"height-type": "no",
-										"z": false
+										"z": true
 									}
 								},
 								{
 									"id": "pin-to-object-imagepoint",
 									"objectClass": "txtforJump",
-									"sid": 827950211188276,
+									"sid": 300261884478567,
 									"behaviorType": "Pin",
 									"parameters": {
 										"pin-to": "Player",
@@ -106,7 +106,7 @@
 								{
 									"id": "pin-to-object-imagepoint",
 									"objectClass": "Slime_healthbar",
-									"sid": 510008261882937,
+									"sid": 488106391382592,
 									"disabled": true,
 									"behaviorType": "Pin",
 									"parameters": {
@@ -121,15 +121,23 @@
 								{
 									"id": "set-layer-opacity",
 									"objectClass": "System",
-									"sid": 573790799103106,
+									"sid": 625414152157635,
 									"disabled": true,
 									"parameters": {
 										"layer": "\"Shop\"",
 										"opacity": "0"
 									}
+								},
+								{
+									"id": "set-cursor-from-sprite",
+									"objectClass": "Mouse",
+									"sid": 966691055644481,
+									"parameters": {
+										"sprite": "Cursor"
+									}
 								}
 							],
-							"sid": 333205923760373
+							"sid": 850118367971594
 						},
 						{
 							"eventType": "block",
@@ -137,22 +145,30 @@
 								{
 									"id": "every-tick",
 									"objectClass": "System",
-									"sid": 576768685033149
+									"sid": 497270102391837
 								}
 							],
 							"actions": [
 								{
 									"id": "set-text",
 									"objectClass": "txtSlimesCount",
-									"sid": 255096568055454,
+									"sid": 645654002555676,
 									"parameters": {
 										"text": "\"Slimes Killed for Escape: \" & Slimes"
 									}
 								},
 								{
 									"id": "set-text",
+									"objectClass": "txtfroBullet",
+									"sid": 217964545567892,
+									"parameters": {
+										"text": "\"  \" &  GunBullets"
+									}
+								},
+								{
+									"id": "set-text",
 									"objectClass": "PowerCounter",
-									"sid": 712947868235410,
+									"sid": 867650097361707,
 									"parameters": {
 										"text": "\"Abilty Time \" & AbilityCountDown"
 									}
@@ -160,7 +176,7 @@
 								{
 									"id": "set-position",
 									"objectClass": "Cursor",
-									"sid": 799972840053826,
+									"sid": 712626489663099,
 									"parameters": {
 										"x": "Mouse.X",
 										"y": "Mouse.Y"
@@ -169,7 +185,7 @@
 								{
 									"id": "set-x",
 									"objectClass": "Spawnerforbullets",
-									"sid": 871846843096523,
+									"sid": 735935786139953,
 									"disabled": true,
 									"parameters": {
 										"x": "big_iron.X"
@@ -178,45 +194,134 @@
 								{
 									"id": "set-y",
 									"objectClass": "Spawnerforbullets",
-									"sid": 397637369015838,
+									"sid": 120754529963721,
 									"disabled": true,
 									"parameters": {
 										"y": "big_iron.Y"
 									}
 								}
 							],
-							"sid": 247380741778274
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Player",
-									"sid": 247337937066282,
-									"parameters": {
-										"object": "triggerForCombo"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-active",
-									"objectClass": "FireSlime",
-									"sid": 848541544728228,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "active"
-									}
-								}
-							],
-							"sid": 383845623378025
+							"sid": 281526083089428
 						}
 					],
-					"sid": 320976669375235
+					"sid": 648542575520041
 				}
 			],
 			"sid": 293836093946653
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Reload2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 722391009575447,
+							"parameters": {
+								"variable": "GunBullets",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 156250006179277
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 372668638674043,
+							"parameters": {
+								"instance-variable": "Strapped_Ability",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 462168805603902,
+							"parameters": {
+								"instance-variable": "Reload",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txtfroBullet",
+							"sid": 552817904280145,
+							"parameters": {
+								"text": "\" Reloading...\" "
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 117743957882163,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 690933149023685,
+							"parameters": {
+								"variable": "GunBullets",
+								"value": "6"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 967148721426771,
+							"parameters": {
+								"instance-variable": "Strapped_Ability",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 671117020307477
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "big_iron",
+							"sid": 828815105777509,
+							"parameters": {
+								"instance-variable": "Rotate"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 960492276127493
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-counter-clockwise",
+							"objectClass": "big_iron",
+							"sid": 442601624072353,
+							"parameters": {
+								"degrees": "2"
+							}
+						}
+					],
+					"sid": 471096132229151
+				}
+			],
+			"sid": 705999867115725
 		},
 		{
 			"eventType": "group",
@@ -1957,7 +2062,7 @@
 										{
 											"id": "on-click",
 											"objectClass": "Mouse",
-											"sid": 645360700261346,
+											"sid": 967333946226029,
 											"parameters": {
 												"mouse-button": "left",
 												"click-type": "clicked"
@@ -1966,17 +2071,46 @@
 										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Player",
-											"sid": 917711788705290,
+											"sid": 521734498432948,
 											"parameters": {
 												"instance-variable": "Strapped_Ability"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 500263947802345,
+											"parameters": {
+												"variable": "GunBullets",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 356124432396530,
+											"parameters": {
+												"variable": "GunBullets",
+												"comparison": 3,
+												"value": "6"
 											}
 										}
 									],
 									"actions": [
 										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 463219200484659,
+											"parameters": {
+												"variable": "GunBullets",
+												"value": "1"
+											}
+										},
+										{
 											"id": "spawn-another-object",
 											"objectClass": "big_iron",
-											"sid": 639551339873331,
+											"sid": 811012398646122,
 											"parameters": {
 												"object": "Bullets",
 												"layer": "0",
@@ -1987,7 +2121,7 @@
 										{
 											"id": "set-enabled",
 											"objectClass": "Bullets",
-											"sid": 236331506215996,
+											"sid": 130927315311699,
 											"behaviorType": "Bullet",
 											"parameters": {
 												"state": "enabled"
@@ -1996,7 +2130,7 @@
 										{
 											"id": "set-position",
 											"objectClass": "Bullets",
-											"sid": 163243091948391,
+											"sid": 774289031353189,
 											"disabled": true,
 											"parameters": {
 												"x": "Spawnerforbullets.X",
@@ -2006,7 +2140,7 @@
 										{
 											"id": "set-angle-toward-position",
 											"objectClass": "Bullets",
-											"sid": 737368809738694,
+											"sid": 602855087500025,
 											"parameters": {
 												"x": "Cursor.X",
 												"y": "Cursor.Y"
@@ -2015,7 +2149,7 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 720050521920668,
+											"sid": 307019346751463,
 											"parameters": {
 												"audio-file": "shot_3",
 												"loop": "not-looping",
@@ -2024,7 +2158,7 @@
 											}
 										}
 									],
-									"sid": 706174482746577
+									"sid": 539324743630021
 								},
 								{
 									"eventType": "block",
@@ -2032,7 +2166,7 @@
 										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Player",
-											"sid": 573718739016821,
+											"sid": 655153836223077,
 											"parameters": {
 												"instance-variable": "Strapped_Ability"
 											}
@@ -2042,7 +2176,7 @@
 										{
 											"id": "set-angle-toward-position",
 											"objectClass": "big_iron",
-											"sid": 396049023188940,
+											"sid": 632364676959118,
 											"parameters": {
 												"x": "Cursor.X",
 												"y": "Cursor.Y"
@@ -2051,14 +2185,14 @@
 										{
 											"id": "set-position",
 											"objectClass": "big_iron",
-											"sid": 204555502838537,
+											"sid": 111532662443868,
 											"parameters": {
 												"x": "Player.ImagePointX(3)",
 												"y": "Player.ImagePointY(3)"
 											}
 										}
 									],
-									"sid": 172046375753846
+									"sid": 682439504747975
 								},
 								{
 									"eventType": "block",
@@ -2066,7 +2200,51 @@
 										{
 											"id": "is-boolean-instance-variable-set",
 											"objectClass": "Player",
-											"sid": 597381378447226,
+											"sid": 214801993819323,
+											"parameters": {
+												"instance-variable": "Reload"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-angle-toward-position",
+											"objectClass": "big_iron",
+											"sid": 891874113325063,
+											"disabled": true,
+											"parameters": {
+												"x": "Cursor.X",
+												"y": "Cursor.Y"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "big_iron",
+											"sid": 105260379562674,
+											"parameters": {
+												"x": "Player.ImagePointX(3)",
+												"y": "Player.ImagePointY(3)"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "big_iron",
+											"sid": 224266739641694,
+											"parameters": {
+												"instance-variable": "Rotate",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 820244716689657
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 955443282385039,
 											"parameters": {
 												"instance-variable": "Strapped_Ability"
 											},
@@ -2077,18 +2255,18 @@
 										{
 											"id": "set-position",
 											"objectClass": "big_iron",
-											"sid": 892699027069211,
+											"sid": 416227731572586,
 											"parameters": {
 												"x": "24.002039",
 												"y": "-71.912239"
 											}
 										}
 									],
-									"sid": 365799114838200,
+									"sid": 344483113145560,
 									"disabled": true
 								}
 							],
-							"sid": 218368559502773
+							"sid": 418382232723422
 						}
 					],
 					"sid": 247100329019821

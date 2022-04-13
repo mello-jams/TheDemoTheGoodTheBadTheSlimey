@@ -571,7 +571,8 @@
 						"WallScaling_Ability": false,
 						"Jump_Ability": false,
 						"Strapped_Ability": false,
-						"PoisonNum": 0
+						"PoisonNum": 0,
+						"Reload": false
 					},
 					"behaviors": {
 						"Platform": {

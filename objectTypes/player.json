@@ -63,6 +63,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 890432002455292
+		},
+		{
+			"name": "Reload",
+			"type": "boolean",
+			"desc": "",
+			"sid": 288321406428255
 		}
 	],
 	"behaviorTypes": [

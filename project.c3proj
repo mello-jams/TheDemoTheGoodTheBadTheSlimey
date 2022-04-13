@@ -200,7 +200,8 @@
 					"ClickToPLauu",
 					"PowerCounter",
 					"txtforWall",
-					"txtforJump"
+					"txtforJump",
+					"txtfroBullet"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -358,12 +359,12 @@
 	"eventSheets": {
 		"items": [
 			"Level1_ES",
-			"Master_ES",
 			"intro_ES",
 			"Loading_ES",
 			"Tittle_ES",
 			"Level2_ES",
-			"Boss_ES"
+			"Boss_ES",
+			"Master_ES"
 		],
 		"subfolders": []
 	},

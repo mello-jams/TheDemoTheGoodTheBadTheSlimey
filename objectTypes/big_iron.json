@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 545002835351389,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Rotate",
+			"type": "boolean",
+			"desc": "",
+			"sid": 417590849344828
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Pin",

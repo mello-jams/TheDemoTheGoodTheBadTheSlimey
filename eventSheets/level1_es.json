@@ -33,6 +33,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "GunBullets",
+			"type": "number",
+			"initialValue": "6",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 434936457035398
+		},
+		{
+			"eventType": "variable",
 			"name": "Counter",
 			"type": "boolean",
 			"initialValue": "false",
@@ -192,6 +202,14 @@
 						},
 						{
 							"id": "set-text",
+							"objectClass": "txtfroBullet",
+							"sid": 810662726616369,
+							"parameters": {
+								"text": "\"  \" &  GunBullets"
+							}
+						},
+						{
+							"id": "set-text",
 							"objectClass": "PowerCounter",
 							"sid": 803339528807508,
 							"parameters": {
@@ -230,6 +248,120 @@
 				}
 			],
 			"sid": 567641026605967
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Reload",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 105288551366243,
+							"parameters": {
+								"variable": "GunBullets",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 885435905665672
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 600749077513077,
+							"parameters": {
+								"instance-variable": "Strapped_Ability",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 494865419367162,
+							"parameters": {
+								"instance-variable": "Reload",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "txtfroBullet",
+							"sid": 801595329941952,
+							"parameters": {
+								"text": "\" Reloading...\" "
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 601669657203131,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 363123657765311,
+							"parameters": {
+								"variable": "GunBullets",
+								"value": "6"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 444866814685000,
+							"parameters": {
+								"instance-variable": "Strapped_Ability",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 837279773127283
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "big_iron",
+							"sid": 888661903085146,
+							"parameters": {
+								"instance-variable": "Rotate"
+							}
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 204088582389801
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-counter-clockwise",
+							"objectClass": "big_iron",
+							"sid": 950533047915071,
+							"parameters": {
+								"degrees": "2"
+							}
+						}
+					],
+					"sid": 263892757431360
+				}
+			],
+			"sid": 767151061738504
 		},
 		{
 			"eventType": "group",
@@ -739,9 +871,38 @@
 											"parameters": {
 												"instance-variable": "Strapped_Ability"
 											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 748446348488490,
+											"parameters": {
+												"variable": "GunBullets",
+												"comparison": 4,
+												"value": "0"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 862285100209014,
+											"parameters": {
+												"variable": "GunBullets",
+												"comparison": 3,
+												"value": "6"
+											}
 										}
 									],
 									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 226496272015584,
+											"parameters": {
+												"variable": "GunBullets",
+												"value": "1"
+											}
+										},
 										{
 											"id": "spawn-another-object",
 											"objectClass": "big_iron",
@@ -828,6 +989,50 @@
 										}
 									],
 									"sid": 234772537656092
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 637526816581951,
+											"parameters": {
+												"instance-variable": "Reload"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-angle-toward-position",
+											"objectClass": "big_iron",
+											"sid": 150032186560062,
+											"disabled": true,
+											"parameters": {
+												"x": "Cursor.X",
+												"y": "Cursor.Y"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "big_iron",
+											"sid": 575847885748331,
+											"parameters": {
+												"x": "Player.ImagePointX(3)",
+												"y": "Player.ImagePointY(3)"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "big_iron",
+											"sid": 761520829196597,
+											"parameters": {
+												"instance-variable": "Rotate",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 584859497137181
 								},
 								{
 									"eventType": "block",

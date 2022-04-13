@@ -1,0 +1,22 @@
+{
+	"name": "txtfroBullet",
+	"plugin-id": "Text",
+	"sid": 986777560307119,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "txtSlimes",
+			"type": "number",
+			"desc": "",
+			"sid": 138815834821952
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 727652363425778
+		}
+	],
+	"effectTypes": []
+}
