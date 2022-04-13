@@ -858,7 +858,7 @@
 				{
 					"type": "Intro_text2",
 					"properties": {
-						"text": "Golly! \nIs that the dangerous Cowboy Slime? \nI heard he does that there slime-diddlin'!",
+						"text": "Golly! \nIs that the dangerous Cowboy Slime? \nI heard he does that there slime-hoggin!",
 						"enable-bbcode": true,
 						"font": "GloriaHallelujah-Regular",
 						"size": 12,
@@ -881,9 +881,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 512.1515206963485,
-						"y": 672.1655439020935,
-						"width": 307.7482492425097,
+						"x": 539.6269914022097,
+						"y": 666.9042780882532,
+						"width": 320.6091283679456,
 						"height": 139,
 						"originX": 0,
 						"originY": 0,
