@@ -56,6 +56,16 @@
 			"sid": 855897591121738
 		},
 		{
+			"eventType": "variable",
+			"name": "floorTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 577843205308520
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Other_behaviors",
@@ -6476,6 +6486,95 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player",
+									"sid": 662031523926243,
+									"parameters": {
+										"instance-variable": "Speed_Ability"
+									}
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player",
+									"sid": 198089081496891,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 622099211077523,
+									"parameters": {
+										"variable": "floorTime",
+										"value": "time"
+									}
+								}
+							],
+							"sid": 214050340811996
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 616291582092369,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [],
+							"sid": 169530313635305,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 560861912859566,
+											"parameters": {
+												"instance-variable": "Speed_Ability"
+											}
+										},
+										{
+											"id": "is-falling",
+											"objectClass": "Player",
+											"sid": 987809467750833,
+											"behaviorType": "Platform"
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 391848662677826,
+											"parameters": {
+												"variable": "floorTime",
+												"comparison": 5,
+												"value": "(time-0.2)"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-vector-y",
+											"objectClass": "Player",
+											"sid": 986677718453970,
+											"behaviorType": "Platform",
+											"parameters": {
+												"vector-y": "-Self.Platform.JumpStrength"
+											}
+										}
+									],
+									"sid": 809983621041694
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "on-created",
 									"objectClass": "SpeedPotion",
 									"sid": 677395427006147
@@ -7333,6 +7432,12 @@
 			],
 			"sid": 634328792242708,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 209299078626619
 		}
 	],
 	"sid": 587643397571846
