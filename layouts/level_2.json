@@ -702,8 +702,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 437,
-						"y": 3611,
+						"x": 439,
+						"y": 3603,
 						"width": 97,
 						"height": 86,
 						"originX": 0.5340909090909091,
@@ -2476,8 +2476,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1200.8819674546887,
-						"y": 3599.4467392300726,
+						"x": 1201,
+						"y": 3605,
 						"width": 84.6253525392814,
 						"height": 82.22122320577908,
 						"originX": 0.5340909090909091,
@@ -2505,8 +2505,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1160,
-						"y": 2845,
+						"x": 1162,
+						"y": 2857,
 						"width": 80.52459578486432,
 						"height": 78.23696522279431,
 						"originX": 0.5340909090909091,
@@ -2524,7 +2524,7 @@
 				{
 					"type": "Earth_spawner4",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2534,10 +2534,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1131,
-						"y": 1532,
-						"width": 176,
-						"height": 171,
+						"x": 1138,
+						"y": 1565,
+						"width": 109,
+						"height": 96,
 						"originX": 0.5340909090909091,
 						"originY": 0.5321637426900585,
 						"color": [
@@ -2553,7 +2553,7 @@
 				{
 					"type": "Earth_spawner5",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2563,10 +2563,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 620,
-						"y": 832,
-						"width": 109.54878215897527,
-						"height": 106.43660084764075,
+						"x": 624,
+						"y": 838,
+						"width": 92.54878215897527,
+						"height": 93.43660084764075,
 						"originX": 0.5340909090909091,
 						"originY": 0.5321637426900585,
 						"color": [

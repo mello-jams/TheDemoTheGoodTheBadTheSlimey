@@ -6462,10 +6462,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "BossSlime",
-							"sid": 578816542171133,
+							"sid": 862984429469657,
 							"parameters": {
 								"instance-variable": "HPSlime",
-								"value": "55"
+								"value": "100"
 							}
 						},
 						{
